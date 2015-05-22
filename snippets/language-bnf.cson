@@ -1,0 +1,10 @@
+"*":
+  "Optional Rule":
+    prefix: "opt"
+    body: "${1|ruleName|} ::= ${2|rule|} | \"\";"
+  "Recursive Rule":
+    prefix: "rec"
+    body: "${1|ruleName|} ::= ${2|rule|} | $2 <$1>;"
+  Rule:
+    prefix: "rule"
+    body: "${1|ruleName|} ::= ${2|rule|};"
