@@ -1,0 +1,4 @@
+# "source.abnf":
+#   "Placeholder Rule":
+#     prefix: "place"
+#     body: '${1:first} ${2:second} $0'
