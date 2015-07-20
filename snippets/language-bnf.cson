@@ -1,4 +1,4 @@
-"*":
+".source.bnf":
   "Optional Rule":
     prefix: "opt"
     body: '<${1:rule-name}> ::= <${1:rule-name}> | ""$0'
