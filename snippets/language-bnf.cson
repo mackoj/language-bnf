@@ -1,10 +1,10 @@
-"*":
+".source.bnf":
   "Optional Rule":
     prefix: "opt"
-    body: "${1|ruleName|} ::= ${2|rule|} | \"\";"
+    body: '<${1:rule-name}> ::= <${1:rule-name}> | ""$0'
   "Recursive Rule":
     prefix: "rec"
-    body: "${1|ruleName|} ::= ${2|rule|} | $2 <$1>;"
+    body: '<${1:recursive}> ::= <${2:rule-name}> | <${2:rule-name}> <${1:recursive}>$0'
   Rule:
     prefix: "rule"
-    body: "${1|ruleName|} ::= ${2|rule|};"
+    body: '<${1:rule-name}> ::= ${2:expression}$0'

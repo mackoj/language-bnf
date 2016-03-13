@@ -1,5 +1,5 @@
 fileTypes: [
-  "src"
+  "bnf"
 ]
 name: "BNF"
 patterns: [
@@ -52,5 +52,5 @@ repository:
     begin: "'"
     end: "'"
     name: "string.quoted.single.bnf"
-scope: "text.bnf"
-scopeName: "text.bnf"
+scope: "source.bnf"
+scopeName: "source.bnf"
