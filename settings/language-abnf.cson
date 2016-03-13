@@ -1,0 +1,3 @@
+'.source.abnf':
+  'editor':
+    'commentStart': '; '
