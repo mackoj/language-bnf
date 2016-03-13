@@ -1,4 +1,4 @@
-## 1.1.0 - First Release
+## 1.1.0 - ABNF Release
 
   * ABNF Augmented Backus–Naur Form syntax support in Atom thanks to `@jarmokivekas`
   * Fix snippet support for BNF thanks to `@jarmokivekas`
