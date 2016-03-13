@@ -17,4 +17,4 @@ Thanks to @jarmokivekas for contributing
   * Add unit tests
   * Improve snippets
   * Improve documentation
-  * Add support for EBNF([Extended Backus–Naur Form](http://en.wikipedia.org/wiki/Extended_Backus–Naur_Form)) and ABNF([Augmented Backus–Naur Form](http://en.wikipedia.org/wiki/Augmented_Backus–Naur_Form))
+  * Add support for EBNF([Extended Backus–Naur Form](http://en.wikipedia.org/wiki/Extended_Backus–Naur_Form))
