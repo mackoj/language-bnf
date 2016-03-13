@@ -1,7 +1,7 @@
 {
   "name": "language-bnf",
   "version": "1.0.0",
-  "description": "BNF(Backus-Naur Form) syntax support in Atom",
+  "description": "BNF(Backus-Naur Form) and ABNF(Augmented Backus–Naur Form) syntax support in Atom",
   "repository": "https://github.com/mackoj/language-bnf",
   "license": "MIT",
   "engines": {
