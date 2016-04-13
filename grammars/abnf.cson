@@ -3,7 +3,9 @@
 # Original author: Jarmo Kivekas
 # Date: July 2015
 
-fileTypes: []
+fileTypes: [
+  "abnf"
+]
 name: "ABNF"
 patterns: [
   # These ruels appear here as well as in the 'expression' rule
