@@ -1,0 +1,53 @@
+# syntax highlighting rule for Extended Backus-Naur Form (EBNF)
+# EBNF is documented in ISO/IEC 14977. This is file applies rule very loosely
+# Translate from: https://github.com/arne-schroppe/ebnf-textmate-bundle/blob/master/EBNF.tmBundle/Syntaxes/EBNF.tmLanguage
+
+fileTypes: [
+  "ebnf"
+]
+name: "EBNF"
+foldingStartMarker: "\\(\\*"
+foldingStopMarker: "\\*\\)"
+patterns: [
+  {include: "#comment"}
+  begin: "^\\s*(\\b(?:\\w|\\s|[\\-_0-9])+\\b)\\s*="
+  captures:
+    "1":
+      name: "entity.name.function"
+  comment: ""
+  end: ";"
+  name: "meta.ebnf.syntax-rule"
+  patterns: [
+    {include: "#comment"}
+    {include: "#non-terminal"}
+    {include: "#single-quote-string"}
+    {include: "#double-quote-string"}
+    {include: "#special-sequence"}
+    {include: "#comment"}
+  ]
+]
+
+repository:
+  "comment":
+    begin: "^\\(\\*"
+    end: "\\*\\)"
+    name: "comment.block.ebnf"
+  "double-quote-string":
+    begin: "\""
+    end: "\""
+    name: "string.quoted.double"
+  "non-terminal":
+    match: "(\\w(?:\\w|\\s|[\\-_0-9])*\\w)"
+    captures:
+      "1":
+        name: "variable.other.ebnf.non-terminal"
+  "single-quote-string":
+    begin: """
+    end: """
+    name: "string.quoted.single"
+  "special-sequence":
+    begin: "\\?"
+    end: "\\?"
+    name: "entity.other.attribute-name"
+scope: "source.ebnf"
+scopeName: "source.ebnf"
