@@ -4,11 +4,11 @@ scopeName: 'source.wsn'
 patterns: [
   {
     match: '(^|\\s+)([a-zA-Z]*)\\s+'
-    name: 'entity.name.tag.bnf'
+    name: 'entity.name.tag.wsn'
   }
   {
     begin: '"'
     end: '"'
-    name: 'string.quoted.double.bnf'
+    name: 'string.quoted.double.wsn'
   }
 ]
