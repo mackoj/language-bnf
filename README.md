@@ -1,6 +1,8 @@
 # Backus-Naur Form syntax support in Atom
 
-This plugin offers support for [Backus-Naur Form](http://en.wikipedia.org/wiki/Backus–Naur_Form) syntax grammars.
+This plugin offers support for classic syntactic metalanguages:
+  * [Backus-Naur Form](http://en.wikipedia.org/wiki/Backus–Naur_Form)
+  * [Wirth Syntax Notation](https://en.wikipedia.org/wiki/Wirth_syntax_notation)
 
 # Contributing
 
