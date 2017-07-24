@@ -1,7 +1,9 @@
 ## 1.2.0 - BNF optimization
 
-	* Simpler patterns for BNF
-	* Self-descriptive BNF example
+	* Self-descriptive Backus-Naur Form example
+	* Simpler patterns for Backus-Naur Form
+	* Self-descriptive Wirth Syntax Notation example
+	* Simple patterns for Wirth Syntax Notation
 
 ## 1.1.0 - ABNF Release
 
