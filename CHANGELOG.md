@@ -1,3 +1,10 @@
+## 1.2.0 - BNF optimization
+
+	* Self-descriptive Backus-Naur Form example
+	* Simpler patterns for Backus-Naur Form
+	* Self-descriptive Wirth Syntax Notation example
+	* Simple patterns for Wirth Syntax Notation
+
 ## 1.1.0 - ABNF Release
 
   * ABNF Augmented Backus–Naur Form syntax support in Atom thanks to `@jarmokivekas`
