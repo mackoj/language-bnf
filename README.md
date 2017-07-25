@@ -4,6 +4,7 @@ This plugin offers support for classic syntactic metalanguages:
 
   * [Backus-Naur Form](http://en.wikipedia.org/wiki/Backus–Naur_Form)
   * [Wirth Syntax Notation](https://en.wikipedia.org/wiki/Wirth_syntax_notation)
+  * [Augmented Backus–Naur Form](https://tools.ietf.org/html/rfc5234)
 
 # Contributing
 
@@ -15,7 +16,6 @@ Thanks to @jarmokivekas for contributing.
 
 # ToDo
 
-  * Add support for ABNF ([Augmented Backus–Naur Form](https://tools.ietf.org/html/rfc5234))
   * Add support for EBNF ([Extended Backus–Naur Form](http://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996%28E%29.zip))
   * Add unit tests
   * Improve snippets
