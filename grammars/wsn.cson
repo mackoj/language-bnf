@@ -1,6 +1,6 @@
-fname: 'WSN'
-fileTypes: ['wsn']
 scopeName: 'source.wsn'
+name: 'WSN'
+fileTypes: ['wsn']
 patterns: [
   {
     match: '(^|\\s+)([a-zA-Z]*)\\s+'

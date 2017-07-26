@@ -1,6 +1,6 @@
-fname: 'ABNF'
-fileTypes: ['abnf']
 scopeName: 'source.abnf'
+name: 'ABNF'
+fileTypes: ['abnf']
 patterns: [
 	{
     match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)'

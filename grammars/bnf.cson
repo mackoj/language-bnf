@@ -1,6 +1,6 @@
-fname: 'BNF'
-fileTypes: ['bnf']
 scopeName: 'source.bnf'
+name: 'BNF'
+fileTypes: ['bnf']
 patterns: [
   {
     begin: '<'

@@ -1,7 +1,6 @@
-fname: 'EBNF'
-fileTypes: ['ebnf']
 scopeName: 'source.ebnf'
-
+name: 'EBNF'
+fileTypes: ['ebnf']
 patterns: [
   {
     match: '([a-zA-Z][-a-zA-Z0-9]*)'
