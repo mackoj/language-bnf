@@ -3,1719 +3,1719 @@ name: 'ScopeList'
 fileTypes: ['ScopeList']
 patterns: [
 	{
-		match: '(attribute)'
+		match: '(^attribute$)'
 		name: 'attribute'
 	}
 	{
-		match: '(class)'
+		match: '(^class$)'
 		name: 'class'
 	}
 	{
-		match: '(comment.block)'
+		match: '(^comment.block$)'
 		name: 'comment.block'
 	}
 	{
-		match: '(comment.block.documentation)'
+		match: '(^comment.block.documentation$)'
 		name: 'comment.block.documentation'
 	}
 	{
-		match: '(comment.line.banner)'
+		match: '(^comment.line.banner$)'
 		name: 'comment.line.banner'
 	}
 	{
-		match: '(comment.line.double-slash)'
+		match: '(^comment.line.double-slash$)'
 		name: 'comment.line.double-slash'
 	}
 	{
-		match: '(comment.line.number-sign.coffee)'
+		match: '(^comment.line.number-sign.coffee$)'
 		name: 'comment.line.number-sign.coffee'
 	}
 	{
-		match: '(comment.line.shebang)'
+		match: '(^comment.line.shebang$)'
 		name: 'comment.line.shebang'
 	}
 	{
-		match: '(constant)'
+		match: '(^constant$)'
 		name: 'constant'
 	}
 	{
-		match: '(constant.character.entity)'
+		match: '(^constant.character.entity$)'
 		name: 'constant.character.entity'
 	}
 	{
-		match: '(constant.character.escape)'
+		match: '(^constant.character.escape$)'
 		name: 'constant.character.escape'
 	}
 	{
-		match: '(constant.character.escape.codepoint)'
+		match: '(^constant.character.escape.codepoint$)'
 		name: 'constant.character.escape.codepoint'
 	}
 	{
-		match: '(constant.character.escape.line-continuation)'
+		match: '(^constant.character.escape.line-continuation$)'
 		name: 'constant.character.escape.line-continuation'
 	}
 	{
-		match: '(constant.character.escape.newline)'
+		match: '(^constant.character.escape.newline$)'
 		name: 'constant.character.escape.newline'
 	}
 	{
-		match: '(constant.language)'
+		match: '(^constant.language$)'
 		name: 'constant.language'
 	}
 	{
-		match: '(constant.language.boolean)'
+		match: '(^constant.language.boolean$)'
 		name: 'constant.language.boolean'
 	}
 	{
-		match: '(constant.language.null)'
+		match: '(^constant.language.null$)'
 		name: 'constant.language.null'
 	}
 	{
-		match: '(constant.numer)'
+		match: '(^constant.numer$)'
 		name: 'constant.numer'
 	}
 	{
-		match: '(constant.numeric.binary)'
+		match: '(^constant.numeric.binary$)'
 		name: 'constant.numeric.binary'
 	}
 	{
-		match: '(constant.numeric.decimal)'
+		match: '(^constant.numeric.decimal$)'
 		name: 'constant.numeric.decimal'
 	}
 	{
-		match: '(constant.numeric.hex)'
+		match: '(^constant.numeric.hex$)'
 		name: 'constant.numeric.hex'
 	}
 	{
-		match: '(constant.numeric.octal)'
+		match: '(^constant.numeric.octal$)'
 		name: 'constant.numeric.octal'
 	}
 	{
-		match: '(constant.numeric.other.density)'
+		match: '(^constant.numeric.other.density$)'
 		name: 'constant.numeric.other.density'
 	}
 	{
-		match: '(constant.numeric.preprocessor)'
+		match: '(^constant.numeric.preprocessor$)'
 		name: 'constant.numeric.preprocessor'
 	}
 	{
-		match: '(constant.other)'
+		match: '(^constant.other$)'
 		name: 'constant.other'
 	}
 	{
-		match: '(constant.other.color.rgb-value.hex)'
+		match: '(^constant.other.color.rgb-value.hex$)'
 		name: 'constant.other.color.rgb-value.hex'
 	}
 	{
-		match: '(constant.other.description)'
+		match: '(^constant.other.description$)'
 		name: 'constant.other.description'
 	}
 	{
-		match: '(constant.other.inline-data)'
+		match: '(^constant.other.inline-data$)'
 		name: 'constant.other.inline-data'
 	}
 	{
-		match: '(constant.other.object)'
+		match: '(^constant.other.object$)'
 		name: 'constant.other.object'
 	}
 	{
-		match: '(constant.other.object.property)'
+		match: '(^constant.other.object.property$)'
 		name: 'constant.other.object.property'
 	}
 	{
-		match: '(constant.other.placeholder)'
+		match: '(^constant.other.placeholder$)'
 		name: 'constant.other.placeholder'
 	}
 	{
-		match: '(constant.other.property)'
+		match: '(^constant.other.property$)'
 		name: 'constant.other.property'
 	}
 	{
-		match: '(constant.other.unicode-range)'
+		match: '(^constant.other.unicode-range$)'
 		name: 'constant.other.unicode-range'
 	}
 	{
-		match: '(constant.other.variable.mac-class)'
+		match: '(^constant.other.variable.mac-class$)'
 		name: 'constant.other.variable.mac-class'
 	}
 	{
-		match: '(entity.name.entity.other)'
+		match: '(^entity.name.entity.other$)'
 		name: 'entity.name.entity.other'
 	}
 	{
-		match: '(entity.name.function)'
+		match: '(^entity.name.function$)'
 		name: 'entity.name.function'
 	}
 	{
-		match: '(entity.name.function.constructor)'
+		match: '(^entity.name.function.constructor$)'
 		name: 'entity.name.function.constructor'
 	}
 	{
-		match: '(entity.name.function.namespace-prefix)'
+		match: '(^entity.name.function.namespace-prefix$)'
 		name: 'entity.name.function.namespace-prefix'
 	}
 	{
-		match: '(entity.name.function.preprocessor)'
+		match: '(^entity.name.function.preprocessor$)'
 		name: 'entity.name.function.preprocessor'
 	}
 	{
-		match: '(entity.name.tag)'
+		match: '(^entity.name.tag$)'
 		name: 'entity.name.tag'
 	}
 	{
-		match: '(entity.name.tag.block.any)'
+		match: '(^entity.name.tag.block.any$)'
 		name: 'entity.name.tag.block.any'
 	}
 	{
-		match: '(entity.name.tag.custom)'
+		match: '(^entity.name.tag.custom$)'
 		name: 'entity.name.tag.custom'
 	}
 	{
-		match: '(entity.name.tag.doctype)'
+		match: '(^entity.name.tag.doctype$)'
 		name: 'entity.name.tag.doctype'
 	}
 	{
-		match: '(entity.name.tag.inline.any)'
+		match: '(^entity.name.tag.inline.any$)'
 		name: 'entity.name.tag.inline.any'
 	}
 	{
-		match: '(entity.name.tag.other)'
+		match: '(^entity.name.tag.other$)'
 		name: 'entity.name.tag.other'
 	}
 	{
-		match: '(entity.name.tag.pragma-mark)'
+		match: '(^entity.name.tag.pragma-mark$)'
 		name: 'entity.name.tag.pragma-mark'
 	}
 	{
-		match: '(entity.name.tag.script)'
+		match: '(^entity.name.tag.script$)'
 		name: 'entity.name.tag.script'
 	}
 	{
-		match: '(entity.name.tag.structure.any)'
+		match: '(^entity.name.tag.structure.any$)'
 		name: 'entity.name.tag.structure.any'
 	}
 	{
-		match: '(entity.name.tag.style)'
+		match: '(^entity.name.tag.style$)'
 		name: 'entity.name.tag.style'
 	}
 	{
-		match: '(entity.name.tag.wildcard)'
+		match: '(^entity.name.tag.wildcard$)'
 		name: 'entity.name.tag.wildcard'
 	}
 	{
-		match: '(entity.name.type)'
+		match: '(^entity.name.type$)'
 		name: 'entity.name.type'
 	}
 	{
-		match: '(entity.name.type.class)'
+		match: '(^entity.name.type.class$)'
 		name: 'entity.name.type.class'
 	}
 	{
-		match: '(entity.name.type.inherited)'
+		match: '(^entity.name.type.inherited$)'
 		name: 'entity.name.type.inherited'
 	}
 	{
-		match: '(entity.name.type.instance)'
+		match: '(^entity.name.type.instance$)'
 		name: 'entity.name.type.instance'
 	}
 	{
-		match: '(entity.name.type.object.console)'
+		match: '(^entity.name.type.object.console$)'
 		name: 'entity.name.type.object.console'
 	}
 	{
-		match: '(entity.other.attribute-name)'
+		match: '(^entity.other.attribute-name$)'
 		name: 'entity.other.attribute-name'
 	}
 	{
-		match: '(entity.other.attribute-name.class)'
+		match: '(^entity.other.attribute-name.class$)'
 		name: 'entity.other.attribute-name.class'
 	}
 	{
-		match: '(entity.other.attribute-name.id)'
+		match: '(^entity.other.attribute-name.id$)'
 		name: 'entity.other.attribute-name.id'
 	}
 	{
-		match: '(entity.other.attribute-name.pragma.preprocessor)'
+		match: '(^entity.other.attribute-name.pragma.preprocessor$)'
 		name: 'entity.other.attribute-name.pragma.preprocessor'
 	}
 	{
-		match: '(entity.other.attribute-name.pseudo-class)'
+		match: '(^entity.other.attribute-name.pseudo-class$)'
 		name: 'entity.other.attribute-name.pseudo-class'
 	}
 	{
-		match: '(entity.other.attribute-name.pseudo-element)'
+		match: '(^entity.other.attribute-name.pseudo-element$)'
 		name: 'entity.other.attribute-name.pseudo-element'
 	}
 	{
-		match: '(entity.other.inherited-class)'
+		match: '(^entity.other.inherited-class$)'
 		name: 'entity.other.inherited-class'
 	}
 	{
-		match: '(entity.other.keyframe-offset)'
+		match: '(^entity.other.keyframe-offset$)'
 		name: 'entity.other.keyframe-offset'
 	}
 	{
-		match: '(entity.other.keyframe-offset.percentage)'
+		match: '(^entity.other.keyframe-offset.percentage$)'
 		name: 'entity.other.keyframe-offset.percentage'
 	}
 	{
-		match: '(entity.other.namespace-prefix)'
+		match: '(^entity.other.namespace-prefix$)'
 		name: 'entity.other.namespace-prefix'
 	}
 	{
-		match: '(function)'
+		match: '(^function$)'
 		name: 'function'
 	}
 	{
-		match: '(import)'
+		match: '(^import$)'
 		name: 'import'
 	}
 	{
-		match: '(invalid.deprecated.color.system)'
+		match: '(^invalid.deprecated.color.system$)'
 		name: 'invalid.deprecated.color.system'
 	}
 	{
-		match: '(invalid.deprecated.combinator)'
+		match: '(^invalid.deprecated.combinator$)'
 		name: 'invalid.deprecated.combinator'
 	}
 	{
-		match: '(invalid.deprecated.constant.media)'
+		match: '(^invalid.deprecated.constant.media$)'
 		name: 'invalid.deprecated.constant.media'
 	}
 	{
-		match: '(invalid.deprecated.function)'
+		match: '(^invalid.deprecated.function$)'
 		name: 'invalid.deprecated.function'
 	}
 	{
-		match: '(invalid.deprecated.gradient.function)'
+		match: '(^invalid.deprecated.gradient.function$)'
 		name: 'invalid.deprecated.gradient.function'
 	}
 	{
-		match: '(invalid.deprecated.media)'
+		match: '(^invalid.deprecated.media$)'
 		name: 'invalid.deprecated.media'
 	}
 	{
-		match: '(invalid.illegal)'
+		match: '(^invalid.illegal$)'
 		name: 'invalid.illegal'
 	}
 	{
-		match: '(invalid.illegal.bad-ampersand)'
+		match: '(^invalid.illegal.bad-ampersand$)'
 		name: 'invalid.illegal.bad-ampersand'
 	}
 	{
-		match: '(invalid.illegal.bad-comments-or-CDATA)'
+		match: '(^invalid.illegal.bad-comments-or-CDATA$)'
 		name: 'invalid.illegal.bad-comments-or-CDATA'
 	}
 	{
-		match: '(invalid.illegal.bad-identifier)'
+		match: '(^invalid.illegal.bad-identifier$)'
 		name: 'invalid.illegal.bad-identifier'
 	}
 	{
-		match: '(invalid.illegal.colon)'
+		match: '(^invalid.illegal.colon$)'
 		name: 'invalid.illegal.colon'
 	}
 	{
-		match: '(invalid.illegal.comma)'
+		match: '(^invalid.illegal.comma$)'
 		name: 'invalid.illegal.comma'
 	}
 	{
-		match: '(invalid.illegal.delimiter-too-long)'
+		match: '(^invalid.illegal.delimiter-too-long$)'
 		name: 'invalid.illegal.delimiter-too-long'
 	}
 	{
-		match: '(invalid.illegal.identifier)'
+		match: '(^invalid.illegal.identifier$)'
 		name: 'invalid.illegal.identifier'
 	}
 	{
-		match: '(invalid.illegal.incomplete)'
+		match: '(^invalid.illegal.incomplete$)'
 		name: 'invalid.illegal.incomplete'
 	}
 	{
-		match: '(invalid.illegal.leading-whitespace.charset)'
+		match: '(^invalid.illegal.leading-whitespace.charset$)'
 		name: 'invalid.illegal.leading-whitespace.charset'
 	}
 	{
-		match: '(invalid.illegal.macro-name)'
+		match: '(^invalid.illegal.macro-name$)'
 		name: 'invalid.illegal.macro-name'
 	}
 	{
-		match: '(invalid.illegal.no-whitespace.charset)'
+		match: '(^invalid.illegal.no-whitespace.charset$)'
 		name: 'invalid.illegal.no-whitespace.charset'
 	}
 	{
-		match: '(invalid.illegal.not-double-quoted.charset)'
+		match: '(^invalid.illegal.not-double-quoted.charset$)'
 		name: 'invalid.illegal.not-double-quoted.charset'
 	}
 	{
-		match: '(invalid.illegal.not-lowercase.charset)'
+		match: '(^invalid.illegal.not-lowercase.charset$)'
 		name: 'invalid.illegal.not-lowercase.charset'
 	}
 	{
-		match: '(invalid.illegal.placeholder)'
+		match: '(^invalid.illegal.placeholder$)'
 		name: 'invalid.illegal.placeholder'
 	}
 	{
-		match: '(invalid.illegal.stray)'
+		match: '(^invalid.illegal.stray$)'
 		name: 'invalid.illegal.stray'
 	}
 	{
-		match: '(invalid.illegal.stray-comment-end)'
+		match: '(^invalid.illegal.stray-comment-end$)'
 		name: 'invalid.illegal.stray-comment-end'
 	}
 	{
-		match: '(invalid.illegal.string)'
+		match: '(^invalid.illegal.string$)'
 		name: 'invalid.illegal.string'
 	}
 	{
-		match: '(invalid.illegal.unclosed-string.charset)'
+		match: '(^invalid.illegal.unclosed-string.charset$)'
 		name: 'invalid.illegal.unclosed-string.charset'
 	}
 	{
-		match: '(invalid.illegal.unclosed.string)'
+		match: '(^invalid.illegal.unclosed.string$)'
 		name: 'invalid.illegal.unclosed.string'
 	}
 	{
-		match: '(invalid.illegal.unexpected-characters.charset)'
+		match: '(^invalid.illegal.unexpected-characters.charset$)'
 		name: 'invalid.illegal.unexpected-characters.charset'
 	}
 	{
-		match: '(invalid.illegal.unicode-escape)'
+		match: '(^invalid.illegal.unicode-escape$)'
 		name: 'invalid.illegal.unicode-escape'
 	}
 	{
-		match: '(invalid.illegal.unknown-escape)'
+		match: '(^invalid.illegal.unknown-escape$)'
 		name: 'invalid.illegal.unknown-escape'
 	}
 	{
-		match: '(invalid.illegal.whitespace.charset)'
+		match: '(^invalid.illegal.whitespace.charset$)'
 		name: 'invalid.illegal.whitespace.charset'
 	}
 	{
-		match: '(invalid.illegal.you-forgot-semicolon)'
+		match: '(^invalid.illegal.you-forgot-semicolon$)'
 		name: 'invalid.illegal.you-forgot-semicolon'
 	}
 	{
-		match: '(keyword)'
+		match: '(^keyword$)'
 		name: 'keyword'
 	}
 	{
-		match: '(keyword.control)'
+		match: '(^keyword.control$)'
 		name: 'keyword.control'
 	}
 	{
-		match: '(keyword.control.at-rule)'
+		match: '(^keyword.control.at-rule$)'
 		name: 'keyword.control.at-rule'
 	}
 	{
-		match: '(keyword.control.at-rule.charset)'
+		match: '(^keyword.control.at-rule.charset$)'
 		name: 'keyword.control.at-rule.charset'
 	}
 	{
-		match: '(keyword.control.at-rule.counter-style)'
+		match: '(^keyword.control.at-rule.counter-style$)'
 		name: 'keyword.control.at-rule.counter-style'
 	}
 	{
-		match: '(keyword.control.at-rule.document)'
+		match: '(^keyword.control.at-rule.document$)'
 		name: 'keyword.control.at-rule.document'
 	}
 	{
-		match: '(keyword.control.at-rule.font-face)'
+		match: '(^keyword.control.at-rule.font-face$)'
 		name: 'keyword.control.at-rule.font-face'
 	}
 	{
-		match: '(keyword.control.at-rule.font-feature-values)'
+		match: '(^keyword.control.at-rule.font-feature-values$)'
 		name: 'keyword.control.at-rule.font-feature-values'
 	}
 	{
-		match: '(keyword.control.at-rule.import)'
+		match: '(^keyword.control.at-rule.import$)'
 		name: 'keyword.control.at-rule.import'
 	}
 	{
-		match: '(keyword.control.at-rule.keyframes)'
+		match: '(^keyword.control.at-rule.keyframes$)'
 		name: 'keyword.control.at-rule.keyframes'
 	}
 	{
-		match: '(keyword.control.at-rule.media)'
+		match: '(^keyword.control.at-rule.media$)'
 		name: 'keyword.control.at-rule.media'
 	}
 	{
-		match: '(keyword.control.at-rule.namespace)'
+		match: '(^keyword.control.at-rule.namespace$)'
 		name: 'keyword.control.at-rule.namespace'
 	}
 	{
-		match: '(keyword.control.at-rule.page)'
+		match: '(^keyword.control.at-rule.page$)'
 		name: 'keyword.control.at-rule.page'
 	}
 	{
-		match: '(keyword.control.at-rule.supports)'
+		match: '(^keyword.control.at-rule.supports$)'
 		name: 'keyword.control.at-rule.supports'
 	}
 	{
-		match: '(keyword.control.at-rule.viewport)'
+		match: '(^keyword.control.at-rule.viewport$)'
 		name: 'keyword.control.at-rule.viewport'
 	}
 	{
-		match: '(keyword.control.case)'
+		match: '(^keyword.control.case$)'
 		name: 'keyword.control.case'
 	}
 	{
-		match: '(keyword.control.default)'
+		match: '(^keyword.control.default$)'
 		name: 'keyword.control.default'
 	}
 	{
-		match: '(keyword.control.directive)'
+		match: '(^keyword.control.directive$)'
 		name: 'keyword.control.directive'
 	}
 	{
-		match: '(keyword.control.directive.conditional)'
+		match: '(^keyword.control.directive.conditional$)'
 		name: 'keyword.control.directive.conditional'
 	}
 	{
-		match: '(keyword.control.directive.define)'
+		match: '(^keyword.control.directive.define$)'
 		name: 'keyword.control.directive.define'
 	}
 	{
-		match: '(keyword.control.directive.diagnostic)'
+		match: '(^keyword.control.directive.diagnostic$)'
 		name: 'keyword.control.directive.diagnostic'
 	}
 	{
-		match: '(keyword.control.directive.line)'
+		match: '(^keyword.control.directive.line$)'
 		name: 'keyword.control.directive.line'
 	}
 	{
-		match: '(keyword.control.directive.pragma)'
+		match: '(^keyword.control.directive.pragma$)'
 		name: 'keyword.control.directive.pragma'
 	}
 	{
-		match: '(keyword.control.directive.pragma.pragma-mark)'
+		match: '(^keyword.control.directive.pragma.pragma-mark$)'
 		name: 'keyword.control.directive.pragma.pragma-mark'
 	}
 	{
-		match: '(keyword.control.directive.undef)'
+		match: '(^keyword.control.directive.undef$)'
 		name: 'keyword.control.directive.undef'
 	}
 	{
-		match: '(keyword.control.namespace)'
+		match: '(^keyword.control.namespace$)'
 		name: 'keyword.control.namespace'
 	}
 	{
-		match: '(keyword.control.switch)'
+		match: '(^keyword.control.switch$)'
 		name: 'keyword.control.switch'
 	}
 	{
-		match: '(keyword.operator)'
+		match: '(^keyword.operator$)'
 		name: 'keyword.operator'
 	}
 	{
-		match: '(keyword.operator.arithmet)'
+		match: '(^keyword.operator.arithmet$)'
 		name: 'keyword.operator.arithmet'
 	}
 	{
-		match: '(keyword.operator.assignment)'
+		match: '(^keyword.operator.assignment$)'
 		name: 'keyword.operator.assignment'
 	}
 	{
-		match: '(keyword.operator.assignment.compound)'
+		match: '(^keyword.operator.assignment.compound$)'
 		name: 'keyword.operator.assignment.compound'
 	}
 	{
-		match: '(keyword.operator.assignment.compound.bitwise)'
+		match: '(^keyword.operator.assignment.compound.bitwise$)'
 		name: 'keyword.operator.assignment.compound.bitwise'
 	}
 	{
-		match: '(keyword.operator.bitwise)'
+		match: '(^keyword.operator.bitwise$)'
 		name: 'keyword.operator.bitwise'
 	}
 	{
-		match: '(keyword.operator.bitwise.shift)'
+		match: '(^keyword.operator.bitwise.shift$)'
 		name: 'keyword.operator.bitwise.shift'
 	}
 	{
-		match: '(keyword.operator.cast)'
+		match: '(^keyword.operator.cast$)'
 		name: 'keyword.operator.cast'
 	}
 	{
-		match: '(keyword.operator.combinator)'
+		match: '(^keyword.operator.combinator$)'
 		name: 'keyword.operator.combinator'
 	}
 	{
-		match: '(keyword.operator.comparison)'
+		match: '(^keyword.operator.comparison$)'
 		name: 'keyword.operator.comparison'
 	}
 	{
-		match: '(keyword.operator.decrement)'
+		match: '(^keyword.operator.decrement$)'
 		name: 'keyword.operator.decrement'
 	}
 	{
-		match: '(keyword.operator.gradient)'
+		match: '(^keyword.operator.gradient$)'
 		name: 'keyword.operator.gradient'
 	}
 	{
-		match: '(keyword.operator.increment)'
+		match: '(^keyword.operator.increment$)'
 		name: 'keyword.operator.increment'
 	}
 	{
-		match: '(keyword.operator.logical)'
+		match: '(^keyword.operator.logical$)'
 		name: 'keyword.operator.logical'
 	}
 	{
-		match: '(keyword.operator.logical.and.media)'
+		match: '(^keyword.operator.logical.and.media$)'
 		name: 'keyword.operator.logical.and.media'
 	}
 	{
-		match: '(keyword.operator.logical.feature)'
+		match: '(^keyword.operator.logical.feature$)'
 		name: 'keyword.operator.logical.feature'
 	}
 	{
-		match: '(keyword.operator.new)'
+		match: '(^keyword.operator.new$)'
 		name: 'keyword.operator.new'
 	}
 	{
-		match: '(keyword.operator.pattern)'
+		match: '(^keyword.operator.pattern$)'
 		name: 'keyword.operator.pattern'
 	}
 	{
-		match: '(keyword.operator.shape)'
+		match: '(^keyword.operator.shape$)'
 		name: 'keyword.operator.shape'
 	}
 	{
-		match: '(keyword.operator.sizeof)'
+		match: '(^keyword.operator.sizeof$)'
 		name: 'keyword.operator.sizeof'
 	}
 	{
-		match: '(keyword.operator.spread)'
+		match: '(^keyword.operator.spread$)'
 		name: 'keyword.operator.spread'
 	}
 	{
-		match: '(keyword.operator.ternary)'
+		match: '(^keyword.operator.ternary$)'
 		name: 'keyword.operator.ternary'
 	}
 	{
-		match: '(keyword.other.debugger)'
+		match: '(^keyword.other.debugger$)'
 		name: 'keyword.other.debugger'
 	}
 	{
-		match: '(keyword.other.important)'
+		match: '(^keyword.other.important$)'
 		name: 'keyword.other.important'
 	}
 	{
-		match: '(keyword.other.unit)'
+		match: '(^keyword.other.unit$)'
 		name: 'keyword.other.unit'
 	}
 	{
-		match: '(keyword.other.unit.percentage)'
+		match: '(^keyword.other.unit.percentage$)'
 		name: 'keyword.other.unit.percentage'
 	}
 	{
-		match: '(meta.angle-brackets)'
+		match: '(^meta.angle-brackets$)'
 		name: 'meta.angle-brackets'
 	}
 	{
-		match: '(meta.arguments)'
+		match: '(^meta.arguments$)'
 		name: 'meta.arguments'
 	}
 	{
-		match: '(meta.at-rule)'
+		match: '(^meta.at-rule$)'
 		name: 'meta.at-rule'
 	}
 	{
-		match: '(meta.at-rule.charset)'
+		match: '(^meta.at-rule.charset$)'
 		name: 'meta.at-rule.charset'
 	}
 	{
-		match: '(meta.at-rule.counter-style.body)'
+		match: '(^meta.at-rule.counter-style.body$)'
 		name: 'meta.at-rule.counter-style.body'
 	}
 	{
-		match: '(meta.at-rule.counter-style.header)'
+		match: '(^meta.at-rule.counter-style.header$)'
 		name: 'meta.at-rule.counter-style.header'
 	}
 	{
-		match: '(meta.at-rule.document.body)'
+		match: '(^meta.at-rule.document.body$)'
 		name: 'meta.at-rule.document.body'
 	}
 	{
-		match: '(meta.at-rule.document.header)'
+		match: '(^meta.at-rule.document.header$)'
 		name: 'meta.at-rule.document.header'
 	}
 	{
-		match: '(meta.at-rule.font-face)'
+		match: '(^meta.at-rule.font-face$)'
 		name: 'meta.at-rule.font-face'
 	}
 	{
-		match: '(meta.at-rule.font-features)'
+		match: '(^meta.at-rule.font-features$)'
 		name: 'meta.at-rule.font-features'
 	}
 	{
-		match: '(meta.at-rule.import)'
+		match: '(^meta.at-rule.import$)'
 		name: 'meta.at-rule.import'
 	}
 	{
-		match: '(meta.at-rule.keyframes.body)'
+		match: '(^meta.at-rule.keyframes.body$)'
 		name: 'meta.at-rule.keyframes.body'
 	}
 	{
-		match: '(meta.at-rule.keyframes.header)'
+		match: '(^meta.at-rule.keyframes.header$)'
 		name: 'meta.at-rule.keyframes.header'
 	}
 	{
-		match: '(meta.at-rule.media.body)'
+		match: '(^meta.at-rule.media.body$)'
 		name: 'meta.at-rule.media.body'
 	}
 	{
-		match: '(meta.at-rule.media.header)'
+		match: '(^meta.at-rule.media.header$)'
 		name: 'meta.at-rule.media.header'
 	}
 	{
-		match: '(meta.at-rule.namespace)'
+		match: '(^meta.at-rule.namespace$)'
 		name: 'meta.at-rule.namespace'
 	}
 	{
-		match: '(meta.at-rule.page)'
+		match: '(^meta.at-rule.page$)'
 		name: 'meta.at-rule.page'
 	}
 	{
-		match: '(meta.at-rule.supports.body)'
+		match: '(^meta.at-rule.supports.body$)'
 		name: 'meta.at-rule.supports.body'
 	}
 	{
-		match: '(meta.at-rule.supports.header)'
+		match: '(^meta.at-rule.supports.header$)'
 		name: 'meta.at-rule.supports.header'
 	}
 	{
-		match: '(meta.at-rule.viewport)'
+		match: '(^meta.at-rule.viewport$)'
 		name: 'meta.at-rule.viewport'
 	}
 	{
-		match: '(meta.attribute-selector)'
+		match: '(^meta.attribute-selector$)'
 		name: 'meta.attribute-selector'
 	}
 	{
-		match: '(meta.attribute-with-value.id)'
+		match: '(^meta.attribute-with-value.id$)'
 		name: 'meta.attribute-with-value.id'
 	}
 	{
-		match: '(meta.block)'
+		match: '(^meta.block$)'
 		name: 'meta.block'
 	}
 	{
-		match: '(meta.brace.curly)'
+		match: '(^meta.brace.curly$)'
 		name: 'meta.brace.curly'
 	}
 	{
-		match: '(meta.brace.round)'
+		match: '(^meta.brace.round$)'
 		name: 'meta.brace.round'
 	}
 	{
-		match: '(meta.brace.square)'
+		match: '(^meta.brace.square$)'
 		name: 'meta.brace.square'
 	}
 	{
-		match: '(meta.bullet-point.light.text)'
+		match: '(^meta.bullet-point.light.text$)'
 		name: 'meta.bullet-point.light.text'
 	}
 	{
-		match: '(meta.bullet-point.star.text)'
+		match: '(^meta.bullet-point.star.text$)'
 		name: 'meta.bullet-point.star.text'
 	}
 	{
-		match: '(meta.bullet-point.strong.text)'
+		match: '(^meta.bullet-point.strong.text$)'
 		name: 'meta.bullet-point.strong.text'
 	}
 	{
-		match: '(meta.class)'
+		match: '(^meta.class$)'
 		name: 'meta.class'
 	}
 	{
-		match: '(meta.class-struct-block)'
+		match: '(^meta.class-struct-block$)'
 		name: 'meta.class-struct-block'
 	}
 	{
-		match: '(meta.class.instance.constructor)'
+		match: '(^meta.class.instance.constructor$)'
 		name: 'meta.class.instance.constructor'
 	}
 	{
-		match: '(meta.computed-key)'
+		match: '(^meta.computed-key$)'
 		name: 'meta.computed-key'
 	}
 	{
-		match: '(meta.control.yield)'
+		match: '(^meta.control.yield$)'
 		name: 'meta.control.yield'
 	}
 	{
-		match: '(meta.delimiter.decimal.period)'
+		match: '(^meta.delimiter.decimal.period$)'
 		name: 'meta.delimiter.decimal.period'
 	}
 	{
-		match: '(meta.delimiter.method.period)'
+		match: '(^meta.delimiter.method.period$)'
 		name: 'meta.delimiter.method.period'
 	}
 	{
-		match: '(meta.delimiter.object.comma)'
+		match: '(^meta.delimiter.object.comma$)'
 		name: 'meta.delimiter.object.comma'
 	}
 	{
-		match: '(meta.delimiter.property.period)'
+		match: '(^meta.delimiter.property.period$)'
 		name: 'meta.delimiter.property.period'
 	}
 	{
-		match: '(meta.encoding)'
+		match: '(^meta.encoding$)'
 		name: 'meta.encoding'
 	}
 	{
-		match: '(meta.export)'
+		match: '(^meta.export$)'
 		name: 'meta.export'
 	}
 	{
-		match: '(meta.extern-block)'
+		match: '(^meta.extern-block$)'
 		name: 'meta.extern-block'
 	}
 	{
-		match: '(meta.feature-query)'
+		match: '(^meta.feature-query$)'
 		name: 'meta.feature-query'
 	}
 	{
-		match: '(meta.function)'
+		match: '(^meta.function$)'
 		name: 'meta.function'
 	}
 	{
-		match: '(meta.function-call)'
+		match: '(^meta.function-call$)'
 		name: 'meta.function-call'
 	}
 	{
-		match: '(meta.function.arrow)'
+		match: '(^meta.function.arrow$)'
 		name: 'meta.function.arrow'
 	}
 	{
-		match: '(meta.function.arrow.json)'
+		match: '(^meta.function.arrow.json$)'
 		name: 'meta.function.arrow.json'
 	}
 	{
-		match: '(meta.function.calc)'
+		match: '(^meta.function.calc$)'
 		name: 'meta.function.calc'
 	}
 	{
-		match: '(meta.function.color)'
+		match: '(^meta.function.color$)'
 		name: 'meta.function.color'
 	}
 	{
-		match: '(meta.function.constructor)'
+		match: '(^meta.function.constructor$)'
 		name: 'meta.function.constructor'
 	}
 	{
-		match: '(meta.function.constructor.initializer-list)'
+		match: '(^meta.function.constructor.initializer-list$)'
 		name: 'meta.function.constructor.initializer-list'
 	}
 	{
-		match: '(meta.function.destructor)'
+		match: '(^meta.function.destructor$)'
 		name: 'meta.function.destructor'
 	}
 	{
-		match: '(meta.function.destructor.prototype)'
+		match: '(^meta.function.destructor.prototype$)'
 		name: 'meta.function.destructor.prototype'
 	}
 	{
-		match: '(meta.function.document-rule)'
+		match: '(^meta.function.document-rule$)'
 		name: 'meta.function.document-rule'
 	}
 	{
-		match: '(meta.function.gradient)'
+		match: '(^meta.function.gradient$)'
 		name: 'meta.function.gradient'
 	}
 	{
-		match: '(meta.function.gradient.invalid.deprecated.gradient)'
+		match: '(^meta.function.gradient.invalid.deprecated.gradient$)'
 		name: 'meta.function.gradient.invalid.deprecated.gradient'
 	}
 	{
-		match: '(meta.function.json)'
+		match: '(^meta.function.json$)'
 		name: 'meta.function.json'
 	}
 	{
-		match: '(meta.function.method.definition)'
+		match: '(^meta.function.method.definition$)'
 		name: 'meta.function.method.definition'
 	}
 	{
-		match: '(meta.function.misc)'
+		match: '(^meta.function.misc$)'
 		name: 'meta.function.misc'
 	}
 	{
-		match: '(meta.function.shape)'
+		match: '(^meta.function.shape$)'
 		name: 'meta.function.shape'
 	}
 	{
-		match: '(meta.function.timing-function)'
+		match: '(^meta.function.timing-function$)'
 		name: 'meta.function.timing-function'
 	}
 	{
-		match: '(meta.function.url)'
+		match: '(^meta.function.url$)'
 		name: 'meta.function.url'
 	}
 	{
-		match: '(meta.function.variable)'
+		match: '(^meta.function.variable$)'
 		name: 'meta.function.variable'
 	}
 	{
-		match: '(meta.import)'
+		match: '(^meta.import$)'
 		name: 'meta.import'
 	}
 	{
-		match: '(meta.initialization)'
+		match: '(^meta.initialization$)'
 		name: 'meta.initialization'
 	}
 	{
-		match: '(meta.method-call)'
+		match: '(^meta.method-call$)'
 		name: 'meta.method-call'
 	}
 	{
-		match: '(meta.namespace-block)'
+		match: '(^meta.namespace-block$)'
 		name: 'meta.namespace-block'
 	}
 	{
-		match: '(meta.parameters)'
+		match: '(^meta.parameters$)'
 		name: 'meta.parameters'
 	}
 	{
-		match: '(meta.preprocessor)'
+		match: '(^meta.preprocessor$)'
 		name: 'meta.preprocessor'
 	}
 	{
-		match: '(meta.preprocessor.diagnostic)'
+		match: '(^meta.preprocessor.diagnostic$)'
 		name: 'meta.preprocessor.diagnostic'
 	}
 	{
-		match: '(meta.preprocessor.include)'
+		match: '(^meta.preprocessor.include$)'
 		name: 'meta.preprocessor.include'
 	}
 	{
-		match: '(meta.preprocessor.macro)'
+		match: '(^meta.preprocessor.macro$)'
 		name: 'meta.preprocessor.macro'
 	}
 	{
-		match: '(meta.preprocessor.pragma)'
+		match: '(^meta.preprocessor.pragma$)'
 		name: 'meta.preprocessor.pragma'
 	}
 	{
-		match: '(meta.property-list)'
+		match: '(^meta.property-list$)'
 		name: 'meta.property-list'
 	}
 	{
-		match: '(meta.property-list.font-feature)'
+		match: '(^meta.property-list.font-feature$)'
 		name: 'meta.property-list.font-feature'
 	}
 	{
-		match: '(meta.property-name)'
+		match: '(^meta.property-name$)'
 		name: 'meta.property-name'
 	}
 	{
-		match: '(meta.ratio)'
+		match: '(^meta.ratio$)'
 		name: 'meta.ratio'
 	}
 	{
-		match: '(meta.section)'
+		match: '(^meta.section$)'
 		name: 'meta.section'
 	}
 	{
-		match: '(meta.selector)'
+		match: '(^meta.selector$)'
 		name: 'meta.selector'
 	}
 	{
-		match: '(meta.switch-statement)'
+		match: '(^meta.switch-statement$)'
 		name: 'meta.switch-statement'
 	}
 	{
-		match: '(meta.tag.block.any)'
+		match: '(^meta.tag.block.any$)'
 		name: 'meta.tag.block.any'
 	}
 	{
-		match: '(meta.tag.inline.any)'
+		match: '(^meta.tag.inline.any$)'
 		name: 'meta.tag.inline.any'
 	}
 	{
-		match: '(meta.tag.other)'
+		match: '(^meta.tag.other$)'
 		name: 'meta.tag.other'
 	}
 	{
-		match: '(meta.tag.sgml)'
+		match: '(^meta.tag.sgml$)'
 		name: 'meta.tag.sgml'
 	}
 	{
-		match: '(meta.tag.sgml.doctype)'
+		match: '(^meta.tag.sgml.doctype$)'
 		name: 'meta.tag.sgml.doctype'
 	}
 	{
-		match: '(meta.tag.structure.any)'
+		match: '(^meta.tag.structure.any$)'
 		name: 'meta.tag.structure.any'
 	}
 	{
-		match: '(meta.toc-list.banner.block)'
+		match: '(^meta.toc-list.banner.block$)'
 		name: 'meta.toc-list.banner.block'
 	}
 	{
-		match: '(meta.toc-list.banner.line)'
+		match: '(^meta.toc-list.banner.line$)'
 		name: 'meta.toc-list.banner.line'
 	}
 	{
-		match: '(meta.using-namespace-declaration)'
+		match: '(^meta.using-namespace-declaration$)'
 		name: 'meta.using-namespace-declaration'
 	}
 	{
-		match: '(method)'
+		match: '(^method$)'
 		name: 'method'
 	}
 	{
-		match: '(other.description)'
+		match: '(^other.description$)'
 		name: 'other.description'
 	}
 	{
-		match: '(other.meta)'
+		match: '(^other.meta$)'
 		name: 'other.meta'
 	}
 	{
-		match: '(property)'
+		match: '(^property$)'
 		name: 'property'
 	}
 	{
-		match: '(punctuation.definition.arguments.begin.bracket.round)'
+		match: '(^punctuation.definition.arguments.begin.bracket.round$)'
 		name: 'punctuation.definition.arguments.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.arguments.end.bracket.round)'
+		match: '(^punctuation.definition.arguments.end.bracket.round$)'
 		name: 'punctuation.definition.arguments.end.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.begin.bracket.square)'
+		match: '(^punctuation.definition.begin.bracket.square$)'
 		name: 'punctuation.definition.begin.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.comment)'
+		match: '(^punctuation.definition.comment$)'
 		name: 'punctuation.definition.comment'
 	}
 	{
-		match: '(punctuation.definition.comment.begin)'
+		match: '(^punctuation.definition.comment.begin$)'
 		name: 'punctuation.definition.comment.begin'
 	}
 	{
-		match: '(punctuation.definition.comment.coffee)'
+		match: '(^punctuation.definition.comment.coffee$)'
 		name: 'punctuation.definition.comment.coffee'
 	}
 	{
-		match: '(punctuation.definition.comment.end)'
+		match: '(^punctuation.definition.comment.end$)'
 		name: 'punctuation.definition.comment.end'
 	}
 	{
-		match: '(punctuation.definition.computed-key.begin.bracket.square)'
+		match: '(^punctuation.definition.computed-key.begin.bracket.square$)'
 		name: 'punctuation.definition.computed-key.begin.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.computed-key.end.bracket.square)'
+		match: '(^punctuation.definition.computed-key.end.bracket.square$)'
 		name: 'punctuation.definition.computed-key.end.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.condition.begin.bracket.round)'
+		match: '(^punctuation.definition.condition.begin.bracket.round$)'
 		name: 'punctuation.definition.condition.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.condition.end.bracket.round)'
+		match: '(^punctuation.definition.condition.end.bracket.round$)'
 		name: 'punctuation.definition.condition.end.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.constant)'
+		match: '(^punctuation.definition.constant$)'
 		name: 'punctuation.definition.constant'
 	}
 	{
-		match: '(punctuation.definition.directive)'
+		match: '(^punctuation.definition.directive$)'
 		name: 'punctuation.definition.directive'
 	}
 	{
-		match: '(punctuation.definition.end.bracket.square)'
+		match: '(^punctuation.definition.end.bracket.square$)'
 		name: 'punctuation.definition.end.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.entity)'
+		match: '(^punctuation.definition.entity$)'
 		name: 'punctuation.definition.entity'
 	}
 	{
-		match: '(punctuation.definition.entity.begin)'
+		match: '(^punctuation.definition.entity.begin$)'
 		name: 'punctuation.definition.entity.begin'
 	}
 	{
-		match: '(punctuation.definition.entity.begin.bracket.square)'
+		match: '(^punctuation.definition.entity.begin.bracket.square$)'
 		name: 'punctuation.definition.entity.begin.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.entity.end)'
+		match: '(^punctuation.definition.entity.end$)'
 		name: 'punctuation.definition.entity.end'
 	}
 	{
-		match: '(punctuation.definition.entity.end.bracket.square)'
+		match: '(^punctuation.definition.entity.end.bracket.square$)'
 		name: 'punctuation.definition.entity.end.bracket.square'
 	}
 	{
-		match: '(punctuation.definition.function.body.begin.bracket.curly)'
+		match: '(^punctuation.definition.function.body.begin.bracket.curly$)'
 		name: 'punctuation.definition.function.body.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.definition.function.body.end.bracket.curly)'
+		match: '(^punctuation.definition.function.body.end.bracket.curly$)'
 		name: 'punctuation.definition.function.body.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.definition.item.text)'
+		match: '(^punctuation.definition.item.text$)'
 		name: 'punctuation.definition.item.text'
 	}
 	{
-		match: '(punctuation.definition.keyword)'
+		match: '(^punctuation.definition.keyword$)'
 		name: 'punctuation.definition.keyword'
 	}
 	{
-		match: '(punctuation.definition.modules.begin)'
+		match: '(^punctuation.definition.modules.begin$)'
 		name: 'punctuation.definition.modules.begin'
 	}
 	{
-		match: '(punctuation.definition.modules.end)'
+		match: '(^punctuation.definition.modules.end$)'
 		name: 'punctuation.definition.modules.end'
 	}
 	{
-		match: '(punctuation.definition.parameters)'
+		match: '(^punctuation.definition.parameters$)'
 		name: 'punctuation.definition.parameters'
 	}
 	{
-		match: '(punctuation.definition.parameters.begin)'
+		match: '(^punctuation.definition.parameters.begin$)'
 		name: 'punctuation.definition.parameters.begin'
 	}
 	{
-		match: '(punctuation.definition.parameters.begin.bracket.round)'
+		match: '(^punctuation.definition.parameters.begin.bracket.round$)'
 		name: 'punctuation.definition.parameters.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.parameters.end)'
+		match: '(^punctuation.definition.parameters.end$)'
 		name: 'punctuation.definition.parameters.end'
 	}
 	{
-		match: '(punctuation.definition.parameters.end.bracket.round)'
+		match: '(^punctuation.definition.parameters.end.bracket.round$)'
 		name: 'punctuation.definition.parameters.end.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.scope)'
+		match: '(^punctuation.definition.scope$)'
 		name: 'punctuation.definition.scope'
 	}
 	{
-		match: '(punctuation.definition.section.case-statement)'
+		match: '(^punctuation.definition.section.case-statement$)'
 		name: 'punctuation.definition.section.case-statement'
 	}
 	{
-		match: '(punctuation.definition.section.switch-block.begin.bracket.curly)'
+		match: '(^punctuation.definition.section.switch-block.begin.bracket.curly$)'
 		name: 'punctuation.definition.section.switch-block.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.definition.section.switch-block.end.bracket.curly)'
+		match: '(^punctuation.definition.section.switch-block.end.bracket.curly$)'
 		name: 'punctuation.definition.section.switch-block.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.definition.string.begin)'
+		match: '(^punctuation.definition.string.begin$)'
 		name: 'punctuation.definition.string.begin'
 	}
 	{
-		match: '(punctuation.definition.string.end)'
+		match: '(^punctuation.definition.string.end$)'
 		name: 'punctuation.definition.string.end'
 	}
 	{
-		match: '(punctuation.definition.switch-expression.begin.bracket.round)'
+		match: '(^punctuation.definition.switch-expression.begin.bracket.round$)'
 		name: 'punctuation.definition.switch-expression.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.switch-expression.end.bracket.round)'
+		match: '(^punctuation.definition.switch-expression.end.bracket.round$)'
 		name: 'punctuation.definition.switch-expression.end.bracket.round'
 	}
 	{
-		match: '(punctuation.definition.tag)'
+		match: '(^punctuation.definition.tag$)'
 		name: 'punctuation.definition.tag'
 	}
 	{
-		match: '(punctuation.definition.tag.begin)'
+		match: '(^punctuation.definition.tag.begin$)'
 		name: 'punctuation.definition.tag.begin'
 	}
 	{
-		match: '(punctuation.definition.tag.end)'
+		match: '(^punctuation.definition.tag.end$)'
 		name: 'punctuation.definition.tag.end'
 	}
 	{
-		match: '(punctuation.definition.unicode-escape.begin.bracket.curly)'
+		match: '(^punctuation.definition.unicode-escape.begin.bracket.curly$)'
 		name: 'punctuation.definition.unicode-escape.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.definition.unicode-escape.end.bracket.curly)'
+		match: '(^punctuation.definition.unicode-escape.end.bracket.curly$)'
 		name: 'punctuation.definition.unicode-escape.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.arguments.begin.bracket.round)'
+		match: '(^punctuation.section.arguments.begin.bracket.round$)'
 		name: 'punctuation.section.arguments.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.section.arguments.end.bracket.round)'
+		match: '(^punctuation.section.arguments.end.bracket.round$)'
 		name: 'punctuation.section.arguments.end.bracket.round'
 	}
 	{
-		match: '(punctuation.section.block.begin.bracket.curly)'
+		match: '(^punctuation.section.block.begin.bracket.curly$)'
 		name: 'punctuation.section.block.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.block.end.bracket.curly)'
+		match: '(^punctuation.section.block.end.bracket.curly$)'
 		name: 'punctuation.section.block.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.document.begin.bracket.curly)'
+		match: '(^punctuation.section.document.begin.bracket.curly$)'
 		name: 'punctuation.section.document.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.document.end.bracket.curly)'
+		match: '(^punctuation.section.document.end.bracket.curly$)'
 		name: 'punctuation.section.document.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.embedded)'
+		match: '(^punctuation.section.embedded$)'
 		name: 'punctuation.section.embedded'
 	}
 	{
-		match: '(punctuation.section.function.begin.bracket.round)'
+		match: '(^punctuation.section.function.begin.bracket.round$)'
 		name: 'punctuation.section.function.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.section.function.end.bracket.round)'
+		match: '(^punctuation.section.function.end.bracket.round$)'
 		name: 'punctuation.section.function.end.bracket.round'
 	}
 	{
-		match: '(punctuation.section.keyframes.begin.bracket.curly)'
+		match: '(^punctuation.section.keyframes.begin.bracket.curly$)'
 		name: 'punctuation.section.keyframes.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.keyframes.end.bracket.curly)'
+		match: '(^punctuation.section.keyframes.end.bracket.curly$)'
 		name: 'punctuation.section.keyframes.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.media.begin.bracket.curly)'
+		match: '(^punctuation.section.media.begin.bracket.curly$)'
 		name: 'punctuation.section.media.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.media.end.bracket.curly)'
+		match: '(^punctuation.section.media.end.bracket.curly$)'
 		name: 'punctuation.section.media.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.parameters.begin.bracket.round)'
+		match: '(^punctuation.section.parameters.begin.bracket.round$)'
 		name: 'punctuation.section.parameters.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.section.parameters.end.bracket.round)'
+		match: '(^punctuation.section.parameters.end.bracket.round$)'
 		name: 'punctuation.section.parameters.end.bracket.round'
 	}
 	{
-		match: '(punctuation.section.parens.begin.bracket.round)'
+		match: '(^punctuation.section.parens.begin.bracket.round$)'
 		name: 'punctuation.section.parens.begin.bracket.round'
 	}
 	{
-		match: '(punctuation.section.parens.end.bracket.round)'
+		match: '(^punctuation.section.parens.end.bracket.round$)'
 		name: 'punctuation.section.parens.end.bracket.round'
 	}
 	{
-		match: '(punctuation.section.property-list.begin.bracket.curly)'
+		match: '(^punctuation.section.property-list.begin.bracket.curly$)'
 		name: 'punctuation.section.property-list.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.property-list.end.bracket.curly)'
+		match: '(^punctuation.section.property-list.end.bracket.curly$)'
 		name: 'punctuation.section.property-list.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.scope.begin)'
+		match: '(^punctuation.section.scope.begin$)'
 		name: 'punctuation.section.scope.begin'
 	}
 	{
-		match: '(punctuation.section.scope.end)'
+		match: '(^punctuation.section.scope.end$)'
 		name: 'punctuation.section.scope.end'
 	}
 	{
-		match: '(punctuation.section.supports.begin.bracket.curly)'
+		match: '(^punctuation.section.supports.begin.bracket.curly$)'
 		name: 'punctuation.section.supports.begin.bracket.curly'
 	}
 	{
-		match: '(punctuation.section.supports.end.bracket.curly)'
+		match: '(^punctuation.section.supports.end.bracket.curly$)'
 		name: 'punctuation.section.supports.end.bracket.curly'
 	}
 	{
-		match: '(punctuation.separator)'
+		match: '(^punctuation.separator$)'
 		name: 'punctuation.separator'
 	}
 	{
-		match: '(punctuation.separator.dash.unicode-range)'
+		match: '(^punctuation.separator.dash.unicode-range$)'
 		name: 'punctuation.separator.dash.unicode-range'
 	}
 	{
-		match: '(punctuation.separator.delimiter)'
+		match: '(^punctuation.separator.delimiter$)'
 		name: 'punctuation.separator.delimiter'
 	}
 	{
-		match: '(punctuation.separator.dot-access)'
+		match: '(^punctuation.separator.dot-access$)'
 		name: 'punctuation.separator.dot-access'
 	}
 	{
-		match: '(punctuation.separator.key-value)'
+		match: '(^punctuation.separator.key-value$)'
 		name: 'punctuation.separator.key-value'
 	}
 	{
-		match: '(punctuation.separator.list.comma)'
+		match: '(^punctuation.separator.list.comma$)'
 		name: 'punctuation.separator.list.comma'
 	}
 	{
-		match: '(punctuation.separator.namespace.access)'
+		match: '(^punctuation.separator.namespace.access$)'
 		name: 'punctuation.separator.namespace.access'
 	}
 	{
-		match: '(punctuation.separator.parameters)'
+		match: '(^punctuation.separator.parameters$)'
 		name: 'punctuation.separator.parameters'
 	}
 	{
-		match: '(punctuation.separator.pointer-access)'
+		match: '(^punctuation.separator.pointer-access$)'
 		name: 'punctuation.separator.pointer-access'
 	}
 	{
-		match: '(punctuation.terminator.rule)'
+		match: '(^punctuation.terminator.rule$)'
 		name: 'punctuation.terminator.rule'
 	}
 	{
-		match: '(punctuation.terminator.statement)'
+		match: '(^punctuation.terminator.statement$)'
 		name: 'punctuation.terminator.statement'
 	}
 	{
-		match: '(punctuation.vararg-ellipses)'
+		match: '(^punctuation.vararg-ellipses$)'
 		name: 'punctuation.vararg-ellipses'
 	}
 	{
-		match: '(punctuation.whitespace.comment.leading)'
+		match: '(^punctuation.whitespace.comment.leading$)'
 		name: 'punctuation.whitespace.comment.leading'
 	}
 	{
-		match: '(punctuation.whitespace.support.function.leading)'
+		match: '(^punctuation.whitespace.support.function.leading$)'
 		name: 'punctuation.whitespace.support.function.leading'
 	}
 	{
-		match: '(snippet)'
+		match: '(^snippet$)'
 		name: 'snippet'
 	}
 	{
-		match: '(source.css.embedded)'
+		match: '(^source.css.embedded$)'
 		name: 'source.css.embedded'
 	}
 	{
-		match: '(source.js.embedded.source)'
+		match: '(^source.js.embedded.source$)'
 		name: 'source.js.embedded.source'
 	}
 	{
-		match: '(source.python.embedded)'
+		match: '(^source.python.embedded$)'
 		name: 'source.python.embedded'
 	}
 	{
-		match: '(source.smarty.embedded)'
+		match: '(^source.smarty.embedded$)'
 		name: 'source.smarty.embedded'
 	}
 	{
-		match: '(storage.modifier)'
+		match: '(^storage.modifier$)'
 		name: 'storage.modifier'
 	}
 	{
-		match: '(storage.modifier.asy)'
+		match: '(^storage.modifier.asy$)'
 		name: 'storage.modifier.asy'
 	}
 	{
-		match: '(storage.modifier.generator)'
+		match: '(^storage.modifier.generator$)'
 		name: 'storage.modifier.generator'
 	}
 	{
-		match: '(storage.modifier.ignore-case)'
+		match: '(^storage.modifier.ignore-case$)'
 		name: 'storage.modifier.ignore-case'
 	}
 	{
-		match: '(storage.type)'
+		match: '(^storage.type$)'
 		name: 'storage.type'
 	}
 	{
-		match: '(storage.type.class)'
+		match: '(^storage.type.class$)'
 		name: 'storage.type.class'
 	}
 	{
-		match: '(storage.type.const)'
+		match: '(^storage.type.const$)'
 		name: 'storage.type.const'
 	}
 	{
-		match: '(storage.type.function)'
+		match: '(^storage.type.function$)'
 		name: 'storage.type.function'
 	}
 	{
-		match: '(storage.type.function.arrow)'
+		match: '(^storage.type.function.arrow$)'
 		name: 'storage.type.function.arrow'
 	}
 	{
-		match: '(storage.type.modifier)'
+		match: '(^storage.type.modifier$)'
 		name: 'storage.type.modifier'
 	}
 	{
-		match: '(storage.type.template)'
+		match: '(^storage.type.template$)'
 		name: 'storage.type.template'
 	}
 	{
-		match: '(storage.type.var)'
+		match: '(^storage.type.var$)'
 		name: 'storage.type.var'
 	}
 	{
-		match: '(string.quoted.double)'
+		match: '(^string.quoted.double$)'
 		name: 'string.quoted.double'
 	}
 	{
-		match: '(string.quoted.double.doctype.identifiers-and-DTDs)'
+		match: '(^string.quoted.double.doctype.identifiers-and-DTDs$)'
 		name: 'string.quoted.double.doctype.identifiers-and-DTDs'
 	}
 	{
-		match: '(string.quoted.double.include)'
+		match: '(^string.quoted.double.include$)'
 		name: 'string.quoted.double.include'
 	}
 	{
-		match: '(string.quoted.double.raw)'
+		match: '(^string.quoted.double.raw$)'
 		name: 'string.quoted.double.raw'
 	}
 	{
-		match: '(string.quoted.other.lt-gt.include)'
+		match: '(^string.quoted.other.lt-gt.include$)'
 		name: 'string.quoted.other.lt-gt.include'
 	}
 	{
-		match: '(string.quoted.single)'
+		match: '(^string.quoted.single$)'
 		name: 'string.quoted.single'
 	}
 	{
-		match: '(string.quoted.template)'
+		match: '(^string.quoted.template$)'
 		name: 'string.quoted.template'
 	}
 	{
-		match: '(string.quoted.template.graphql)'
+		match: '(^string.quoted.template.graphql$)'
 		name: 'string.quoted.template.graphql'
 	}
 	{
-		match: '(string.quoted.template.sql)'
+		match: '(^string.quoted.template.sql$)'
 		name: 'string.quoted.template.sql'
 	}
 	{
-		match: '(string.regexp)'
+		match: '(^string.regexp$)'
 		name: 'string.regexp'
 	}
 	{
-		match: '(string.unquoted)'
+		match: '(^string.unquoted$)'
 		name: 'string.unquoted'
 	}
 	{
-		match: '(string.unquoted.attribute-value)'
+		match: '(^string.unquoted.attribute-value$)'
 		name: 'string.unquoted.attribute-value'
 	}
 	{
-		match: '(support.class)'
+		match: '(^support.class$)'
 		name: 'support.class'
 	}
 	{
-		match: '(support.class.dom)'
+		match: '(^support.class.dom$)'
 		name: 'support.class.dom'
 	}
 	{
-		match: '(support.class.math)'
+		match: '(^support.class.math$)'
 		name: 'support.class.math'
 	}
 	{
-		match: '(support.constant)'
+		match: '(^support.constant$)'
 		name: 'support.constant'
 	}
 	{
-		match: '(support.constant.color.current)'
+		match: '(^support.constant.color.current$)'
 		name: 'support.constant.color.current'
 	}
 	{
-		match: '(support.constant.color.w3c-extended-color-name)'
+		match: '(^support.constant.color.w3c-extended-color-name$)'
 		name: 'support.constant.color.w3c-extended-color-name'
 	}
 	{
-		match: '(support.constant.color.w3c-standard-color-name)'
+		match: '(^support.constant.color.w3c-standard-color-name$)'
 		name: 'support.constant.color.w3c-standard-color-name'
 	}
 	{
-		match: '(support.constant.dom)'
+		match: '(^support.constant.dom$)'
 		name: 'support.constant.dom'
 	}
 	{
-		match: '(support.constant.font-name)'
+		match: '(^support.constant.font-name$)'
 		name: 'support.constant.font-name'
 	}
 	{
-		match: '(support.constant.language-range)'
+		match: '(^support.constant.language-range$)'
 		name: 'support.constant.language-range'
 	}
 	{
-		match: '(support.constant.mac-class)'
+		match: '(^support.constant.mac-class$)'
 		name: 'support.constant.mac-class'
 	}
 	{
-		match: '(support.constant.media)'
+		match: '(^support.constant.media$)'
 		name: 'support.constant.media'
 	}
 	{
-		match: '(support.constant.parity)'
+		match: '(^support.constant.parity$)'
 		name: 'support.constant.parity'
 	}
 	{
-		match: '(support.constant.property-value)'
+		match: '(^support.constant.property-value$)'
 		name: 'support.constant.property-value'
 	}
 	{
-		match: '(support.constant.property-value.list-style-type)'
+		match: '(^support.constant.property-value.list-style-type$)'
 		name: 'support.constant.property-value.list-style-type'
 	}
 	{
-		match: '(support.constant.property.math)'
+		match: '(^support.constant.property.math$)'
 		name: 'support.constant.property.math'
 	}
 	{
-		match: '(support.constant.step-direction)'
+		match: '(^support.constant.step-direction$)'
 		name: 'support.constant.step-direction'
 	}
 	{
-		match: '(support.constant.text-direction)'
+		match: '(^support.constant.text-direction$)'
 		name: 'support.constant.text-direction'
 	}
 	{
-		match: '(support.constant.vendored.property-value)'
+		match: '(^support.constant.vendored.property-value$)'
 		name: 'support.constant.vendored.property-value'
 	}
 	{
-		match: '(support.function)'
+		match: '(^support.function$)'
 		name: 'support.function'
 	}
 	{
-		match: '(support.function.any-method)'
+		match: '(^support.function.any-method$)'
 		name: 'support.function.any-method'
 	}
 	{
-		match: '(support.function.built-in.smarty)'
+		match: '(^support.function.built-in.smarty$)'
 		name: 'support.function.built-in.smarty'
 	}
 	{
-		match: '(support.function.C99)'
+		match: '(^support.function.C99$)'
 		name: 'support.function.C99'
 	}
 	{
-		match: '(support.function.ca)'
+		match: '(^support.function.ca$)'
 		name: 'support.function.ca'
 	}
 	{
-		match: '(support.function.console)'
+		match: '(^support.function.console$)'
 		name: 'support.function.console'
 	}
 	{
-		match: '(support.function.document-rule)'
+		match: '(^support.function.document-rule$)'
 		name: 'support.function.document-rule'
 	}
 	{
-		match: '(support.function.dom)'
+		match: '(^support.function.dom$)'
 		name: 'support.function.dom'
 	}
 	{
-		match: '(support.function.event-handler)'
+		match: '(^support.function.event-handler$)'
 		name: 'support.function.event-handler'
 	}
 	{
-		match: '(support.function.gradient)'
+		match: '(^support.function.gradient$)'
 		name: 'support.function.gradient'
 	}
 	{
-		match: '(support.function.math)'
+		match: '(^support.function.math$)'
 		name: 'support.function.math'
 	}
 	{
-		match: '(support.function.mi)'
+		match: '(^support.function.mi$)'
 		name: 'support.function.mi'
 	}
 	{
-		match: '(support.function.shape)'
+		match: '(^support.function.shape$)'
 		name: 'support.function.shape'
 	}
 	{
-		match: '(support.function.timing-function)'
+		match: '(^support.function.timing-function$)'
 		name: 'support.function.timing-function'
 	}
 	{
-		match: '(support.function.transform)'
+		match: '(^support.function.transform$)'
 		name: 'support.function.transform'
 	}
 	{
-		match: '(support.function.url)'
+		match: '(^support.function.url$)'
 		name: 'support.function.url'
 	}
 	{
-		match: '(support.type.mac-class)'
+		match: '(^support.type.mac-class$)'
 		name: 'support.type.mac-class'
 	}
 	{
-		match: '(support.type.posix-reserved)'
+		match: '(^support.type.posix-reserved$)'
 		name: 'support.type.posix-reserved'
 	}
 	{
-		match: '(support.type.property-name)'
+		match: '(^support.type.property-name$)'
 		name: 'support.type.property-name'
 	}
 	{
-		match: '(support.type.property-name.media)'
+		match: '(^support.type.property-name.media$)'
 		name: 'support.type.property-name.media'
 	}
 	{
-		match: '(support.type.pthread)'
+		match: '(^support.type.pthread$)'
 		name: 'support.type.pthread'
 	}
 	{
-		match: '(support.type.stdint)'
+		match: '(^support.type.stdint$)'
 		name: 'support.type.stdint'
 	}
 	{
-		match: '(support.type.sys-types)'
+		match: '(^support.type.sys-types$)'
 		name: 'support.type.sys-types'
 	}
 	{
-		match: '(support.type.vendored.property-name)'
+		match: '(^support.type.vendored.property-name$)'
 		name: 'support.type.vendored.property-name'
 	}
 	{
-		match: '(support.type.vendored.property-name.media)'
+		match: '(^support.type.vendored.property-name.media$)'
 		name: 'support.type.vendored.property-name.media'
 	}
 	{
-		match: '(support.variable)'
+		match: '(^support.variable$)'
 		name: 'support.variable'
 	}
 	{
-		match: '(support.variable.dom)'
+		match: '(^support.variable.dom$)'
 		name: 'support.variable.dom'
 	}
 	{
-		match: '(support.variable.property)'
+		match: '(^support.variable.property$)'
 		name: 'support.variable.property'
 	}
 	{
-		match: '(support.variable.property.dom)'
+		match: '(^support.variable.property.dom$)'
 		name: 'support.variable.property.dom'
 	}
 	{
-		match: '(tag)'
+		match: '(^tag$)'
 		name: 'tag'
 	}
 	{
-		match: '(value)'
+		match: '(^value$)'
 		name: 'value'
 	}
 	{
-		match: '(variable)'
+		match: '(^variable$)'
 		name: 'variable'
 	}
 	{
-		match: '(variable.argument)'
+		match: '(^variable.argument$)'
 		name: 'variable.argument'
 	}
 	{
-		match: '(variable.font-feature)'
+		match: '(^variable.font-feature$)'
 		name: 'variable.font-feature'
 	}
 	{
-		match: '(variable.language)'
+		match: '(^variable.language$)'
 		name: 'variable.language'
 	}
 	{
-		match: '(variable.language.default)'
+		match: '(^variable.language.default$)'
 		name: 'variable.language.default'
 	}
 	{
-		match: '(variable.language.import-all)'
+		match: '(^variable.language.import-all$)'
 		name: 'variable.language.import-all'
 	}
 	{
-		match: '(variable.language.this)'
+		match: '(^variable.language.this$)'
 		name: 'variable.language.this'
 	}
 	{
-		match: '(variable.other)'
+		match: '(^variable.other$)'
 		name: 'variable.other'
 	}
 	{
-		match: '(variable.other.description)'
+		match: '(^variable.other.description$)'
 		name: 'variable.other.description'
 	}
 	{
-		match: '(variable.other.member)'
+		match: '(^variable.other.member$)'
 		name: 'variable.other.member'
 	}
 	{
-		match: '(variable.other.module)'
+		match: '(^variable.other.module$)'
 		name: 'variable.other.module'
 	}
 	{
-		match: '(variable.other.module-alias)'
+		match: '(^variable.other.module-alias$)'
 		name: 'variable.other.module-alias'
 	}
 	{
-		match: '(variable.other.object)'
+		match: '(^variable.other.object$)'
 		name: 'variable.other.object'
 	}
 	{
-		match: '(variable.other.object.property)'
+		match: '(^variable.other.object.property$)'
 		name: 'variable.other.object.property'
 	}
 	{
-		match: '(variable.other.property)'
+		match: '(^variable.other.property$)'
 		name: 'variable.other.property'
 	}
 	{
-		match: '(variable.other.readwrite.global.mac-class)'
+		match: '(^variable.other.readwrite.global.mac-class$)'
 		name: 'variable.other.readwrite.global.mac-class'
 	}
 	{
-		match: '(variable.other.readwrite.member)'
+		match: '(^variable.other.readwrite.member$)'
 		name: 'variable.other.readwrite.member'
 	}
 	{
-		match: '(variable.other.readwrite.static.mac-class)'
+		match: '(^variable.other.readwrite.static.mac-class$)'
 		name: 'variable.other.readwrite.static.mac-class'
 	}
 	{
-		match: '(variable.parameter.document-rule)'
+		match: '(^variable.parameter.document-rule$)'
 		name: 'variable.parameter.document-rule'
 	}
 	{
-		match: '(variable.parameter.function)'
+		match: '(^variable.parameter.function$)'
 		name: 'variable.parameter.function'
 	}
 	{
-		match: '(variable.parameter.keyframe-list)'
+		match: '(^variable.parameter.keyframe-list$)'
 		name: 'variable.parameter.keyframe-list'
 	}
 	{
-		match: '(variable.parameter.mi)'
+		match: '(^variable.parameter.mi$)'
 		name: 'variable.parameter.mi'
 	}
 	{
-		match: '(variable.parameter.preprocessor)'
+		match: '(^variable.parameter.preprocessor$)'
 		name: 'variable.parameter.preprocessor'
 	}
 	{
-		match: '(variable.parameter.property)'
+		match: '(^variable.parameter.property$)'
 		name: 'variable.parameter.property'
 	}
 	{
-		match: '(variable.parameter.rest.function)'
+		match: '(^variable.parameter.rest.function$)'
 		name: 'variable.parameter.rest.function'
 	}
 	{
-		match: '(variable.parameter.style-name)'
+		match: '(^variable.parameter.style-name$)'
 		name: 'variable.parameter.style-name'
 	}
 	{
-		match: '(variable.parameter.url)'
+		match: '(^variable.parameter.url$)'
 		name: 'variable.parameter.url'
 	}
 ]

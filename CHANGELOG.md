@@ -1,6 +1,6 @@
 ## 1.2.1 - ScopeList added
 
-  * ScopeList has been extracted from popular languages. Reverse ordered ScopeList.Scopelist shows the syntax coloring of the default theme.
+  * ScopeList has been extracted from popular languages. ScopeList.Scopelist shows the syntax coloring of the default theme.
 
 ## 1.2.0 - Pattern optimization and self-descriptive examples
 
