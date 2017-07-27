@@ -1,6 +1,6 @@
-## 1.2.1 - ScopeList added
+## 1.2.1 - Core ScopeList added
 
-  * ScopeList has been extracted from popular languages. ScopeList.Scopelist shows the syntax coloring of the default theme.
+  * Scope names have been extracted from the core modules. `examples/ScopeList.Scopelist` shows the default syntax coloring of the current theme.
 
 ## 1.2.0 - Pattern optimization and self-descriptive examples
 
