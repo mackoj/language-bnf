@@ -2,19 +2,19 @@ scopeName: 'source.bnf'
 name: 'BNF'
 fileTypes: ['bnf']
 patterns: [
-  {
-    begin: '<'
-    end: '>'
-    name: 'entity.name.tag.bnf'
-  }
-  {
-    begin: '"'
-    end: '"'
-    name: 'string.quoted.double.bnf'
-  }
-  {
-    begin: "'"
-    end: "'"
-    name: 'string.quoted.single.bnf'
-  }
+	{
+		begin: '<'
+		end: '>'
+		name: 'entity.name.tag.bnf'
+	}
+	{
+		begin: '"'
+		end: '"'
+		name: 'string.quoted.double.bnf'
+	}
+	{
+		begin: "'"
+		end: "'"
+		name: 'string.quoted.single.bnf'
+	}
 ]

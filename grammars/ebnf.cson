@@ -2,28 +2,28 @@ scopeName: 'source.ebnf'
 name: 'EBNF'
 fileTypes: ['ebnf']
 patterns: [
-  {
-    match: '([a-zA-Z][-a-zA-Z0-9]*)'
-    name: 'entity.name.tag.ebnf'
-  }
-  {
-    begin: '"'
-    end: '"'
-    name: 'string.quoted.double.ebnf'
-  }
-  {
-    begin: "'"
-    end: "'"
-    name: 'string.quoted.single.ebnf'
-  }
-  {
-    begin: "\\(\\*"
-    end: "\\*\\)"
-    name: "comment.block.ebnf"
-  }
-  {
-    begin: "\\?"
-    end: "\\?"
-    name: "entity.other.attribute-name.ebnf"
-  }
+	{
+		match: '([a-zA-Z][-a-zA-Z0-9]*)'
+		name: 'entity.name.tag.ebnf'
+	}
+	{
+		begin: '"'
+		end: '"'
+		name: 'string.quoted.double.ebnf'
+	}
+	{
+		begin: "'"
+		end: "'"
+		name: 'string.quoted.single.ebnf'
+	}
+	{
+		begin: '\\(\\*'
+		end: '\\*\\)'
+		name: 'comment.block.ebnf'
+	}
+	{
+		begin: '\\?'
+		end: '\\?'
+		name: 'entity.other.attribute-name.ebnf'
+	}
 ]

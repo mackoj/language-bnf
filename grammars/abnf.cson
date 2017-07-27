@@ -3,33 +3,33 @@ name: 'ABNF'
 fileTypes: ['abnf']
 patterns: [
 	{
-    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)'
-    name: "constant.string.core-rule.abnf"
-	}
-  {
-    match: '([a-zA-Z][-a-zA-Z0-9]*)'
-    name: 'entity.name.tag.abnf'
-  }
-  {
-    begin: '"'
-    end: '"'
-    name: 'string.quoted.double.abnf'
-  }
-	{
-    match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
-    name: "constant.numeric.binary.abnf"
+		match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)'
+		name: 'constant.string.core-rule.abnf'
 	}
 	{
-    match: '%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
-    name: "constant.numeric.decimal.abnf"
+		match: '([a-zA-Z][-a-zA-Z0-9]*)'
+		name: 'entity.name.tag.abnf'
 	}
 	{
-    match: '%x[0-9A-F]+((-[0-9A-F]+)|(\\.[0-9A-F]+)*)'
-    name: "constant.numeric.hexadecimal.abnf"
+		begin: '"'
+		end: '"'
+		name: 'string.quoted.double.abnf'
 	}
-  {
-    begin: ';'
-    end: '\\n'
-    name: 'comment.line.semi-colon.abnf'
-  }
+	{
+		match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
+		name: 'constant.numeric.binary.abnf'
+	}
+	{
+		match: '%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
+		name: 'constant.numeric.decimal.abnf'
+	}
+	{
+		match: '%x[0-9A-F]+((-[0-9A-F]+)|(\\.[0-9A-F]+)*)'
+		name: 'constant.numeric.hexadecimal.abnf'
+	}
+	{
+		begin: ';'
+		end: '\\n'
+		name: 'comment.line.semi-colon.abnf'
+	}
 ]
