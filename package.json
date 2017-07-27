@@ -1,5 +1,4 @@
 {
-	"theme": "syntax",
 	"name": "language-bnf",
 	"version": "1.2.0",
 	"description": "BNF language support in Atom",
