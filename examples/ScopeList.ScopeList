@@ -135,7 +135,6 @@ constant.character.escape.yaml
 constant.character.numeric.regexp
 constant.character.parameter-entity.xml
 constant.keyword.clojure
-constant.language.boolean.$1.js
 constant.language.boolean.clojure
 constant.language.boolean.false.coffee
 constant.language.boolean.false.toml
@@ -410,7 +409,6 @@ invalid.illegal.sass
 invalid.illegal.scss
 invalid.illegal.send-channel.go
 invalid.illegal.slice.go
-invalid.illegal.stray-$1.c
 invalid.illegal.stray-comment-end.c
 invalid.illegal.string.js
 invalid.illegal.subject-no-trailing-period.git-commit
@@ -439,7 +437,6 @@ invalid.trailing-whitespace
 keyword.channel.go
 keyword.class.cs
 keyword.const.go
-keyword.control.$1.makefile
 keyword.control.anchor.perl
 keyword.control.anchor.regexp
 keyword.control.at-rule.include.scss
@@ -479,7 +476,6 @@ keyword.control.java
 keyword.control.js
 keyword.control.logical.operator.less
 keyword.control.module.ruby
-keyword.control.namespace.$2
 keyword.control.new.java
 keyword.control.operator
 keyword.control.page.jsp
@@ -507,7 +503,6 @@ keyword.import.go
 keyword.interface.go
 keyword.linq.cs
 keyword.map.go
-keyword.operator.$1ter.js
 keyword.operator.arithmetic.bitwise.go
 keyword.operator.arithmetic.css
 keyword.operator.arithmetic.go
@@ -575,10 +570,8 @@ keyword.operator.js
 keyword.operator.key.php
 keyword.operator.less
 keyword.operator.list.shell
-keyword.operator.logical.$1.media.css
 keyword.operator.logical.and.media.css
 keyword.operator.logical.c
-keyword.operator.logical.feature.$1.css
 keyword.operator.logical.go
 keyword.operator.logical.php
 keyword.operator.logical.predicate.cocoa
@@ -655,8 +648,6 @@ keyword.other.static.cs
 keyword.other.table.sql
 keyword.other.tag.local.yaml
 keyword.other.time.toml
-keyword.other.unit.${2
-keyword.other.unit.${2:/downcase
 keyword.other.unit.css
 keyword.other.unit.percentage.css
 keyword.other.unit.scss
@@ -729,14 +720,12 @@ markup.raw.gfm
 markup.raw.inline.markdown
 markup.raw.pod.perl
 markup.strike.gfm
-markup.underline.link.$2.hyperlink
 markup.underline.link.gfm
 markup.underline.link.hyperlink.pod.perl
 markup.underline.link.image.markdown
 markup.underline.link.markdown
 markup.underline.link.php
 markup.underline.link.radar
-markup.underline.link.rfc.$1.hyperlink
 meta.after-expression.clojure
 meta.angle-brackets.cpp
 meta.annotation.cs
@@ -748,8 +737,6 @@ meta.assertion.look-ahead.regexp
 meta.assertion.look-behind.regexp
 meta.assertion.negative-look-ahead.regexp
 meta.assertion.negative-look-behind.regexp
-meta.at-rule.${3
-meta.at-rule.${3:/downcase
 meta.at-rule.at-root.sass
 meta.at-rule.at-root.scss
 meta.at-rule.charset.css
@@ -1048,7 +1035,6 @@ meta.scope.case-clause.shell
 meta.scope.case-pattern.shell
 meta.scope.condition.makefile
 meta.scope.conditional.makefile
-meta.scope.dictionary-item.${3
 meta.scope.dictionary.plist
 meta.scope.for-in-loop.shell
 meta.scope.for-loop.shell
@@ -1107,7 +1093,6 @@ meta.tag.sgml.doctype.xml
 meta.tag.sgml.html
 meta.tag.string.xml.plist
 meta.tag.structure.any.html
-meta.tag.template.$3.jsp
 meta.tag.template.attribute.jsp
 meta.tag.template.body.jsp
 meta.tag.template.dobody.jsp
@@ -1546,7 +1531,6 @@ source.ruby.rails.embedded.sql
 source.shell
 source.smarty.embedded.html
 storage.control.clojure
-storage.modifier.$1.java
 storage.modifier.cpp
 storage.modifier.cs
 storage.modifier.extends.java
@@ -1879,7 +1863,6 @@ support.constant.property.math.js
 support.constant.step-direction.css
 support.constant.text-direction.css
 support.constant.vendored.property-value.css
-support.function.$1.makefile
 support.function.actionpack.rails
 support.function.activerecord.rails
 support.function.activesupport.rails
@@ -2016,7 +1999,6 @@ support.function.string.php
 support.function.string.sql
 support.function.sybase.php
 support.function.taint.php
-support.function.target.$1.makefile
 support.function.tidy.php
 support.function.tokenizer.php
 support.function.trader.php

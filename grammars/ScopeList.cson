@@ -688,11 +688,6 @@ patterns: [
 	}
 
 	{
-		match: '(^constant.language.boolean.$1.js$)'
-		name: 'constant.language.boolean.$1.js'
-	}
-
-	{
 		match: '(^constant.language.boolean.clojure$)'
 		name: 'constant.language.boolean.clojure'
 	}
@@ -2063,11 +2058,6 @@ patterns: [
 	}
 
 	{
-		match: '(^invalid.illegal.stray-$1.c$)'
-		name: 'invalid.illegal.stray-$1.c'
-	}
-
-	{
 		match: '(^invalid.illegal.stray-comment-end.c$)'
 		name: 'invalid.illegal.stray-comment-end.c'
 	}
@@ -2205,11 +2195,6 @@ patterns: [
 	{
 		match: '(^keyword.const.go$)'
 		name: 'keyword.const.go'
-	}
-
-	{
-		match: '(^keyword.control.$1.makefile$)'
-		name: 'keyword.control.$1.makefile'
 	}
 
 	{
@@ -2408,11 +2393,6 @@ patterns: [
 	}
 
 	{
-		match: '(^keyword.control.namespace.$2$)'
-		name: 'keyword.control.namespace.$2'
-	}
-
-	{
 		match: '(^keyword.control.new.java$)'
 		name: 'keyword.control.new.java'
 	}
@@ -2545,11 +2525,6 @@ patterns: [
 	{
 		match: '(^keyword.map.go$)'
 		name: 'keyword.map.go'
-	}
-
-	{
-		match: '(^keyword.operator.$1ter.js$)'
-		name: 'keyword.operator.$1ter.js'
 	}
 
 	{
@@ -2888,11 +2863,6 @@ patterns: [
 	}
 
 	{
-		match: '(^keyword.operator.logical.$1.media.css$)'
-		name: 'keyword.operator.logical.$1.media.css'
-	}
-
-	{
 		match: '(^keyword.operator.logical.and.media.css$)'
 		name: 'keyword.operator.logical.and.media.css'
 	}
@@ -2900,11 +2870,6 @@ patterns: [
 	{
 		match: '(^keyword.operator.logical.c$)'
 		name: 'keyword.operator.logical.c'
-	}
-
-	{
-		match: '(^keyword.operator.logical.feature.$1.css$)'
-		name: 'keyword.operator.logical.feature.$1.css'
 	}
 
 	{
@@ -3288,16 +3253,6 @@ patterns: [
 	}
 
 	{
-		match: '(^keyword.other.unit.${2$)'
-		name: 'keyword.other.unit.${2'
-	}
-
-	{
-		match: '(^keyword.other.unit.${2:/downcase$)'
-		name: 'keyword.other.unit.${2:/downcase'
-	}
-
-	{
 		match: '(^keyword.other.unit.css$)'
 		name: 'keyword.other.unit.css'
 	}
@@ -3658,11 +3613,6 @@ patterns: [
 	}
 
 	{
-		match: '(^markup.underline.link.$2.hyperlink$)'
-		name: 'markup.underline.link.$2.hyperlink'
-	}
-
-	{
 		match: '(^markup.underline.link.gfm$)'
 		name: 'markup.underline.link.gfm'
 	}
@@ -3690,11 +3640,6 @@ patterns: [
 	{
 		match: '(^markup.underline.link.radar$)'
 		name: 'markup.underline.link.radar'
-	}
-
-	{
-		match: '(^markup.underline.link.rfc.$1.hyperlink$)'
-		name: 'markup.underline.link.rfc.$1.hyperlink'
 	}
 
 	{
@@ -3750,16 +3695,6 @@ patterns: [
 	{
 		match: '(^meta.assertion.negative-look-behind.regexp$)'
 		name: 'meta.assertion.negative-look-behind.regexp'
-	}
-
-	{
-		match: '(^meta.at-rule.${3$)'
-		name: 'meta.at-rule.${3'
-	}
-
-	{
-		match: '(^meta.at-rule.${3:/downcase$)'
-		name: 'meta.at-rule.${3:/downcase'
 	}
 
 	{
@@ -5253,11 +5188,6 @@ patterns: [
 	}
 
 	{
-		match: '(^meta.scope.dictionary-item.${3$)'
-		name: 'meta.scope.dictionary-item.${3'
-	}
-
-	{
 		match: '(^meta.scope.dictionary.plist$)'
 		name: 'meta.scope.dictionary.plist'
 	}
@@ -5545,11 +5475,6 @@ patterns: [
 	{
 		match: '(^meta.tag.structure.any.html$)'
 		name: 'meta.tag.structure.any.html'
-	}
-
-	{
-		match: '(^meta.tag.template.$3.jsp$)'
-		name: 'meta.tag.template.$3.jsp'
 	}
 
 	{
@@ -7743,11 +7668,6 @@ patterns: [
 	}
 
 	{
-		match: '(^storage.modifier.$1.java$)'
-		name: 'storage.modifier.$1.java'
-	}
-
-	{
 		match: '(^storage.modifier.cpp$)'
 		name: 'storage.modifier.cpp'
 	}
@@ -9408,11 +9328,6 @@ patterns: [
 	}
 
 	{
-		match: '(^support.function.$1.makefile$)'
-		name: 'support.function.$1.makefile'
-	}
-
-	{
 		match: '(^support.function.actionpack.rails$)'
 		name: 'support.function.actionpack.rails'
 	}
@@ -10090,11 +10005,6 @@ patterns: [
 	{
 		match: '(^support.function.taint.php$)'
 		name: 'support.function.taint.php'
-	}
-
-	{
-		match: '(^support.function.target.$1.makefile$)'
-		name: 'support.function.target.$1.makefile'
 	}
 
 	{
