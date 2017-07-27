@@ -96,7 +96,6 @@ invalid.illegal.unicode-escape
 invalid.illegal.unknown-escape
 invalid.illegal.whitespace.charset
 invalid.illegal.you-forgot-semicolon
-JavaScript
 keyword
 keyword.control
 keyword.control.at-rule
@@ -241,7 +240,6 @@ meta.using-namespace-declaration
 method
 other.description
 other.meta
-Plain Text
 property
 punctuation.definition.arguments.begin.bracket.round
 punctuation.definition.arguments.end.bracket.round
