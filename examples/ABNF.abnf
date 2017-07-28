@@ -2,6 +2,7 @@
 ; white spaces on the right side means concatenation
 
 rulelist                = 1*( rule / (*c-wsp c-nl) )
+                        ; a rule starts at the beginning of the line
 
 rule                    = rulename defined-as elements c-nl
                         ; continues in following lines starting with white space

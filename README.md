@@ -16,6 +16,6 @@ Provides basic syntax highlighting for formal language specifications written in
   * CSON
   * CSS
   * [EBNF (self-descriptive)](http://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996%28E%29.zip)
-  * JSON
+  * [JSON](https://tools.ietf.org/html/rfc7159)
   * LESS
   * [WSN (self-descriptive)](https://en.wikipedia.org/wiki/Wirth_syntax_notation)
