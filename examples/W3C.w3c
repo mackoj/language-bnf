@@ -1,24 +1,24 @@
 /* EBNF-like notation used in W3C specifications */
 
-Grammar ::= (Rule (Space Comment)? Space? #xA)+
+Grammar ::= (Rule Space? #xA)+
 
-Space ::= (#x20 | #x9 | #xD | #xA)+
+Space ::= (#x20 | #x9 | #xD | #xA | Comment)+
 
-Comment ::= '/*' PrintedCharacter* '*/'
+Comment ::= '/*' Character* '*/'
 
-/* PrintedCharacter ::= the glyph which is directly displayed or printed out */
+Character ::= [#x1-#xD7FF]
+            | [#xE000-#xFFFD]
+            | [#x10000-#x10FFFF]
+/* any Unicode character, excluding the surrogate blocks, FFFE, and FFFF. */
 
 Rule ::= Symbol Space '::=' Space Expression
 
-Symbol ::= Letter+   /* Symbols are written with an initial capital letter
-                        if they are the start symbol of a regular language,
-                        otherwise with an initial lowercase letter. */
-
-Letter ::= [A-Za-z]
+Symbol ::= [A-Za-z]+
 
 Expression ::= Concatenation (Space '|' Space Concatenation)* /* Alternation */
 
-Concatenation ::= Repetition ((Space Repetition)* | (Space '-' Repetition)?)
+Concatenation ::= Repetition (Space Repetition)*
+                | Repetition (Space '-' Repetition)?
 
 Repetition ::= SimpleExpression [?+*]?  /* '?' means zero or one occurrence
                                            '+' means one or more occurrence
@@ -39,9 +39,10 @@ PositiveCharacterSet ::= '[' (Enumeration | Range)+ ']'
 
 NegativeCharacterSet ::= '[^' (Enumeration | Range)+ ']'
 
-Enumeration ::= (EncodedCharacter | PrintedCharacter)+
+Enumeration ::= (Character | EncodedCharacter)+
 
-Range ::= EncodedCharacter '-' EncodedCharacter | PrintedCharacter '-' PrintedCharacter
+Range ::= Character '-' Character
+        | EncodedCharacter '-' EncodedCharacter
 
 SingleQuotedString ::= "'" [^']* "'"
 
