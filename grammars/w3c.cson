@@ -1,0 +1,37 @@
+scopeName: 'source.w3c'
+name: 'W3C'
+fileTypes: ['w3c']
+patterns: [
+	{
+		match: '[?+*]'
+		name: 'keyword.operator.w3c'
+	}
+	{
+		match: '#x[0-9A-F]+'
+		name: 'constant.numeric.hexadecimal.abnf'
+	}
+	{
+		match: '[A-Za-z]+'
+		name: 'entity.name.tag.w3c'
+	}
+	{
+		begin: '\\['
+		end: '\\]'
+		name: 'constant.character.control.regexp.w3c'
+	}
+	{
+		begin: '"'
+		end: '"'
+		name: 'string.quoted.double.w3c'
+	}
+	{
+		begin: "'"
+		end: "'"
+		name: 'string.quoted.single.w3c'
+	}
+	{
+		begin: '/\\*'
+		end: '\\*/'
+		name: 'comment.block.w3c'
+	}
+]

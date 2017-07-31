@@ -54,7 +54,7 @@ char = unescaped /
 
 escape = %x5C                 ; \
 
-HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F" ; core rule
+HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F" ; core rule, see in ABNF.abnf
 
 quotation-mark = %x22         ; "
 
