@@ -59,7 +59,7 @@ NameChar ::= NameStartChar
 contentspec ::= 'EMPTY' | 'ANY' | Mixed | children
 
 Mixed ::= '(' S? '#PCDATA' (S? '|' S? Name)* S? ')*'
-        | '(' S? '#PCDATA' S? ')'
+        | '(' S? '#PCDATA' S? ')' /* parsed character data*/
 
 children ::= (choice | seq) ('?' | '*' | '+')?
 
@@ -75,7 +75,7 @@ AttDef ::= S Name S AttType S DefaultDecl
 
 AttType ::= StringType | TokenizedType | EnumeratedType
 
-StringType ::= 'CDATA'
+StringType ::= 'CDATA' /* character data not parsed */
 
 TokenizedType ::= 'ID'
                 | 'IDREF'
@@ -102,7 +102,12 @@ AttValue ::= '"' ([^<&"] | Reference)* '"'
 
 Reference ::= EntityRef | CharRef
 
-EntityRef ::= '&' Name ';'
+EntityRef ::= '&' Name ';'  /* &lt;   <
+                               &gt;   >
+                               &amp;  &
+                               &quot; "
+                               &apos; '
+                            */
 
 CharRef ::= '&#' [0-9]+ ';'
           | '&#x' [0-9a-fA-F]+ ';'

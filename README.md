@@ -20,4 +20,5 @@ Provides basic syntax highlighting for formal language specifications written in
   * [EBNF (self-descriptive)](http://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996%28E%29.zip)
   * [JSON](https://tools.ietf.org/html/rfc7159)
   * LESS
+  * [RELAX NG Compact Syntax](http://standards.iso.org/ittf/PubliclyAvailableStandards/c052348_ISO_IEC_19757-2_2008%28E%29.zip)
   * [WSN (self-descriptive)](https://en.wikipedia.org/wiki/Wirth_syntax_notation)
