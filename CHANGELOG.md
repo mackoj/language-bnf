@@ -1,3 +1,9 @@
+## 1.2.2 - W3C EBNF added with examples
+
+  * Self-descriptive W3C
+  * DTD.w3c
+  * RELAX NG compact syntax grammar
+
 ## 1.2.1 - Core ScopeList added
 
   * Scope names have been extracted from the core modules. `examples/ScopeList.Scopelist` shows the default syntax coloring of the current theme.
