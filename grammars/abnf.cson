@@ -24,7 +24,7 @@ patterns: [
 		name: 'constant.numeric.decimal.abnf'
 	}
 	{
-		match: '%x[0-9A-F]+((-[0-9A-F]+)|(\\.[0-9A-F]+)*)'
+		match: '%x[0-9a-fA-F]+((-[0-9a-fA-F]+)|(\\.[0-9a-fA-F]+)*)'
 		name: 'constant.numeric.hexadecimal.abnf'
 	}
 	{
