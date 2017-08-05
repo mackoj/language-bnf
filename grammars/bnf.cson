@@ -2,19 +2,53 @@ scopeName: 'source.bnf'
 name: 'BNF'
 fileTypes: ['bnf']
 patterns: [
-	{
-		begin: '<'
-		end: '>'
-		name: 'entity.name.tag.bnf'
-	}
-	{
-		begin: '"'
-		end: '"'
-		name: 'string.quoted.double.bnf'
-	}
-	{
-		begin: "'"
-		end: "'"
-		name: 'string.quoted.single.bnf'
-	}
+  {
+    match: '^\\s*(<)([A-Za-z][A-Za-z-]*)(>)\\s*(::=)'
+    captures:
+      1:
+        name: 'punctuation.definition.tag.begin.bnf'
+      2:
+        name: 'entity.name.tag.bnf'
+      3:
+        name: 'punctuation.definition.tag.end.bnf'
+      4:
+        name: 'keyword.operator.assignment.bnf'
+  }
+  {
+    begin: '<'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.tag.begin.bnf'
+    end: '>'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.tag.end.bnf'
+    contentName: 'entity.name.tag.bnf'
+  }
+  {
+    begin: '"'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.bnf'
+    end: '"'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.bnf'
+    contentName: 'string.quoted.double.bnf'
+  }
+  {
+    begin: "'"
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.bnf'
+    end: "'"
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.bnf'
+    contentName: 'string.quoted.single.bnf'
+  }
+  {
+    match: '\\|'
+    name: 'keyword.operator.or.bnf'
+  }
 ]
