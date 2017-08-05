@@ -2,34 +2,50 @@ scopeName: 'source.abnf'
 name: 'ABNF'
 fileTypes: ['abnf']
 patterns: [
-	{
-		match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)'
-		name: 'constant.string.core-rule.abnf'
-	}
-	{
-		match: '([a-zA-Z][-a-zA-Z0-9]*)'
-		name: 'entity.name.tag.abnf'
-	}
-	{
-		begin: '"'
-		end: '"'
-		name: 'string.quoted.double.abnf'
-	}
-	{
-		match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
-		name: 'constant.numeric.binary.abnf'
-	}
-	{
-		match: '%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
-		name: 'constant.numeric.decimal.abnf'
-	}
-	{
-		match: '%x[0-9a-fA-F]+((-[0-9a-fA-F]+)|(\\.[0-9a-fA-F]+)*)'
-		name: 'constant.numeric.hexadecimal.abnf'
-	}
-	{
-		begin: ';'
-		end: '\\n'
-		name: 'comment.line.semi-colon.abnf'
-	}
+  {
+    match: '(^|[^A-Za-z-])(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)([^A-Za-z-]|$)'
+    captures:
+      2:
+        name: 'constant.language.abnf'
+  }
+  {
+    match: '^([A-Za-z][A-Za-z-]*)\\s*(=/?)\\s*'
+    captures:
+      1:
+        name: 'entity.name.tag.abnf'
+      2:
+        name: 'keyword.operator.assignment.bnf'
+  }
+  {
+    match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
+    name: 'constant.numeric.binary.abnf'
+  }
+  {
+    match: '%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
+    name: 'constant.numeric.decimal.abnf'
+  }
+  {
+    match: '%x[0-9A-Fa-f]+((-[0-9A-Fa-f]+)|(\\.[0-9A-Fa-f]+)*)'
+    name: 'constant.numeric.hexadecimal.abnf'
+  }
+  {
+    match: '([A-Za-z][A-Za-z0-9-]*)'
+    name: 'entity.name.tag.abnf'
+  }
+  {
+    begin: '"'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.abnf'
+    end: '"'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.abnf'
+    contentName: 'string.quoted.double.abnf'
+  }
+  {
+    begin: ';'
+    end: '\\n'
+    name: 'comment.line.semi-colon.abnf'
+  }
 ]
