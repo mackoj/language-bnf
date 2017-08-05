@@ -15,6 +15,16 @@ patterns: [
         name: 'keyword.operator.assignment.bnf'
   }
   {
+    match: '(<)(EOL)(>)'
+    captures:
+      1:
+        name: 'punctuation.definition.tag.begin.bnf'
+      2:
+        name: 'constant.character.entity.bnf'
+      3:
+        name: 'punctuation.definition.tag.end.bnf'
+  }
+  {
     begin: '<'
     beginCaptures:
       0:
