@@ -14,7 +14,7 @@ patterns: [
   }
   {
     match: '\\s*(=/?)\\s*'
-    name: 'keyword.operator.assignment.bnf'
+    name: 'keyword.operator.assignment.abnf'
   }
   {
     match: '\\s*%b[01]+((-[01]+)|(\\.[01]+)*)\\s*'
