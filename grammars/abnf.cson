@@ -3,13 +3,13 @@ name: 'ABNF'
 fileTypes: ['abnf']
 patterns: [
   {
-    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)((?![A-Za-z-])|$)'
+    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)(\\s*|$|(?![A-Za-z-]))'
     captures:
       1:
         name: 'constant.language.abnf'
   }
   {
-    match: '([A-Za-z][A-Za-z0-9-]*)'
+    match: '([A-Za-z][A-Za-z0-9-]*)\\s*'
     name: 'entity.name.tag.abnf'
   }
   {
@@ -17,15 +17,15 @@ patterns: [
     name: 'keyword.operator.assignment.bnf'
   }
   {
-    match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
+    match: '\\s*%b[01]+((-[01]+)|(\\.[01]+)*)'
     name: 'constant.numeric.binary.abnf'
   }
   {
-    match: '%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
+    match: '\\s*%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)'
     name: 'constant.numeric.decimal.abnf'
   }
   {
-    match: '%x[0-9A-Fa-f]+((-[0-9A-Fa-f]+)|(\\.[0-9A-Fa-f]+)*)'
+    match: '\\s*%x[0-9A-Fa-f]+((-[0-9A-Fa-f]+)|(\\.[0-9A-Fa-f]+)*)'
     name: 'constant.numeric.hexadecimal.abnf'
   }
   {
@@ -33,54 +33,58 @@ patterns: [
     name: 'constant.numeric.integer.abnf'
   }
   {
-    match: '\\*'
+    match: '\\s*\\*\\s*'
     name: 'keyword.operator.repeat.abnf'
   }
   {
-    match: '/'
+    match: '\\s*/\\s*'
     name: 'keyword.operator.or.abnf'
   }
   {
-    match: '\\('
+    match: '\\s*\\(\\s*'
     name: 'punctuation.bracket.round.begin.abnf'
   }
   {
-    match: '\\)'
+    match: '\\s*\\)\\s*'
     name: 'punctuation.bracket.round.end.abnf'
   }
   {
-    match: '\\['
+    match: '\\s*\\[\\s*'
     name: 'punctuation.bracket.square.begin.abnf'
   }
   {
-    match: '\\]'
+    match: '\\s*\\]\\s*'
     name: 'punctuation.bracket.square.end.abnf'
   }
   {
-    begin: '"'
+    begin: '\\s*"'
     beginCaptures:
       0:
         name: 'punctuation.definition.string.begin.abnf'
-    end: '"'
+    end: '"\\s*'
     endCaptures:
       0:
         name: 'punctuation.definition.string.end.abnf'
     contentName: 'string.quoted.double.abnf'
   }
   {
-    begin: '<'
+    begin: '\\s*<'
     beginCaptures:
       0:
         name: 'punctuation.definition.string.begin.abnf'
-    end: '>'
+    end: '>\\s*'
     endCaptures:
       0:
         name: 'punctuation.definition.string.end.abnf'
     contentName: 'string.other.abnf'
   }
   {
-    begin: ';'
+    begin: '\\s*;'
     end: '\\n'
     name: 'comment.line.semi-colon.abnf'
+  }
+  {
+    match: '\\s*'
+    name: 'invalid.illegal.abnf'
   }
 ]
