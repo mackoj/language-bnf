@@ -2,6 +2,10 @@
 
 Grammar ::= (Rule Space? #xA)+
 
+Rule ::= Symbol Space '::=' Space Expression
+
+Symbol ::= [A-Za-z]+
+
 Space ::= (#x20 | #x9 | #xD | #xA | Comment)+
 
 Comment ::= '/*' Character* '*/'
@@ -10,10 +14,6 @@ Character ::= [#x1-#xD7FF]
             | [#xE000-#xFFFD]
             | [#x10000-#x10FFFF]
 /* any Unicode character, excluding the surrogate blocks, FFFE, and FFFF. */
-
-Rule ::= Symbol Space '::=' Space Expression
-
-Symbol ::= [A-Za-z]+
 
 Expression ::= Concatenation (Space '|' Space Concatenation)* /* Alternation */
 
