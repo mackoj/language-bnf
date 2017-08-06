@@ -3,18 +3,18 @@ name: 'ABNF'
 fileTypes: ['abnf']
 patterns: [
   {
-    match: '(^|[^A-Za-z-])(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)([^A-Za-z-]|$)'
+    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)((?![A-Za-z-])|$)'
     captures:
-      2:
+      1:
         name: 'constant.language.abnf'
   }
   {
-    match: '^([A-Za-z][A-Za-z-]*)\\s*(=/?)\\s*'
-    captures:
-      1:
-        name: 'entity.name.tag.abnf'
-      2:
-        name: 'keyword.operator.assignment.bnf'
+    match: '([A-Za-z][A-Za-z0-9-]*)'
+    name: 'entity.name.tag.abnf'
+  }
+  {
+    match: '\\s*(=/?)\\s*'
+    name: 'keyword.operator.assignment.bnf'
   }
   {
     match: '%b[01]+((-[01]+)|(\\.[01]+)*)'
@@ -29,8 +29,32 @@ patterns: [
     name: 'constant.numeric.hexadecimal.abnf'
   }
   {
-    match: '([A-Za-z][A-Za-z0-9-]*)'
-    name: 'entity.name.tag.abnf'
+    match: '[0-9]+'
+    name: 'constant.numeric.integer.abnf'
+  }
+  {
+    match: '\\*'
+    name: 'keyword.operator.repeat.abnf'
+  }
+  {
+    match: '/'
+    name: 'keyword.operator.or.abnf'
+  }
+  {
+    match: '\\('
+    name: 'punctuation.bracket.round.begin.abnf'
+  }
+  {
+    match: '\\)'
+    name: 'punctuation.bracket.round.end.abnf'
+  }
+  {
+    match: '\\['
+    name: 'punctuation.bracket.square.begin.abnf'
+  }
+  {
+    match: '\\]'
+    name: 'punctuation.bracket.square.end.abnf'
   }
   {
     begin: '"'
@@ -42,6 +66,17 @@ patterns: [
       0:
         name: 'punctuation.definition.string.end.abnf'
     contentName: 'string.quoted.double.abnf'
+  }
+  {
+    begin: '<'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.abnf'
+    end: '>'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.abnf'
+    contentName: 'string.other.abnf'
   }
   {
     begin: ';'
