@@ -3,7 +3,7 @@ name: 'BNF'
 fileTypes: ['bnf']
 patterns: [
   {
-    match: '^\\s*(<)([A-Za-z][A-Za-z-]*)(>)\\s*(::=)'
+    match: '^\\s*(<)([A-Za-z][A-Za-z0-9-]*)(>)\\s*(::=)\\s*(.*)\\s*$'
     captures:
       1:
         name: 'punctuation.definition.tag.begin.bnf'
@@ -13,52 +13,56 @@ patterns: [
         name: 'punctuation.definition.tag.end.bnf'
       4:
         name: 'keyword.operator.assignment.bnf'
-  }
-  {
-    match: '(<)(EOL)(>)'
-    captures:
-      1:
-        name: 'punctuation.definition.tag.begin.bnf'
-      2:
-        name: 'constant.character.entity.bnf'
-      3:
-        name: 'punctuation.definition.tag.end.bnf'
-  }
-  {
-    begin: '<'
-    beginCaptures:
-      0:
-        name: 'punctuation.definition.tag.begin.bnf'
-    end: '>'
-    endCaptures:
-      0:
-        name: 'punctuation.definition.tag.end.bnf'
-    contentName: 'entity.name.tag.bnf'
-  }
-  {
-    begin: '"'
-    beginCaptures:
-      0:
-        name: 'punctuation.definition.string.begin.bnf'
-    end: '"'
-    endCaptures:
-      0:
-        name: 'punctuation.definition.string.end.bnf'
-    contentName: 'string.quoted.double.bnf'
-  }
-  {
-    begin: "'"
-    beginCaptures:
-      0:
-        name: 'punctuation.definition.string.begin.bnf'
-    end: "'"
-    endCaptures:
-      0:
-        name: 'punctuation.definition.string.end.bnf'
-    contentName: 'string.quoted.single.bnf'
-  }
-  {
-    match: '\\|'
-    name: 'keyword.operator.or.bnf'
+      5:
+        name: 'meta.expression.bnf'
+        patterns: [
+          {
+            match: '(\\s*<)(EOL)(>\\s*)'
+            captures:
+              1:
+                name: 'punctuation.definition.tag.begin.bnf'
+              2:
+                name: 'constant.character.entity.bnf'
+              3:
+                name: 'punctuation.definition.tag.end.bnf'
+          }
+          {
+            begin: '\\s*<'
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.tag.begin.bnf'
+            end: '>\\s*'
+            endCaptures:
+              0:
+                name: 'punctuation.definition.tag.end.bnf'
+            contentName: 'entity.name.tag.bnf'
+          }
+          {
+            begin: '\\s*"'
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.string.begin.bnf'
+            end: '"\\s*'
+            endCaptures:
+              0:
+                name: 'punctuation.definition.string.end.bnf'
+            contentName: 'string.quoted.double.bnf'
+          }
+          {
+            begin: "\\s*'"
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.string.begin.bnf'
+            end: "'\\s*"
+            endCaptures:
+              0:
+                name: 'punctuation.definition.string.end.bnf'
+            contentName: 'string.quoted.single.bnf'
+          }
+          {
+            match: '\\s*\\|\\s*'
+            name: 'keyword.operator.or.bnf'
+          }
+        ]
   }
 ]
