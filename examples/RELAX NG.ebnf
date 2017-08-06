@@ -1,6 +1,6 @@
 (* ISO/IEC 19757-2:2008 Annex C *)
 
-(* Similarly to W3C, this syntax uses ::= as defining symbol. *)
+(* Similarly to W3C, this syntax uses ::= as defining symbol and + as repetition symbol. *)
 
 topLevel ::= decl* (pattern | grammarContent*)
 

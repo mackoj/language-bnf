@@ -22,7 +22,7 @@ patterns: [
     endCaptures:
       0:
         name: 'punctuation.definition.string.end.ebnf'
-    contentName: 'string.quoted.double.bnf'
+    contentName: 'string.quoted.double.ebnf'
   }
   {
     begin: "\\s*'"
@@ -33,7 +33,7 @@ patterns: [
     endCaptures:
       0:
         name: 'punctuation.definition.string.end.ebnf'
-    contentName: 'string.quoted.single.bnf'
+    contentName: 'string.quoted.single.ebnf'
   }
   {
     begin: '\\s*\\?'
@@ -61,6 +61,10 @@ patterns: [
   {
     match: '\\s*([|/!])\\s*'
     name: 'keyword.operator.or.ebnf'
+  }
+  {
+    match: '\\s*\\*\\s*'
+    name: 'keyword.operator.repeat.ebnf'
   }
   {
     match: '\\s*-\\s*'
@@ -93,9 +97,5 @@ patterns: [
   {
     match: '\\s*(}|:\\))\\s*'
     name: 'punctuation.bracket.curly.end.ebnf'
-  }
-  {
-    match: '.*'
-    name: 'invalid.illegal.ebnf'
   }
 ]
