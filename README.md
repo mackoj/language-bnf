@@ -22,4 +22,5 @@ Provides basic syntax highlighting for formal language specifications written in
   * LESS (planned)
   * [RELAX NG Compact Syntax](http://standards.iso.org/ittf/PubliclyAvailableStandards/c052348_ISO_IEC_19757-2_2008%28E%29.zip)
   * [WSN (self-descriptive)](https://en.wikipedia.org/wiki/Wirth_syntax_notation)
+  * [XPath 3.1](https://www.w3.org/TR/xpath-31/#nt-bnf)
   * YAML (planned)
