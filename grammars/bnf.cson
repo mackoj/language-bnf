@@ -1,56 +1,68 @@
-fileTypes: [
-  "bnf"
-]
-name: "BNF"
+scopeName: 'source.bnf'
+name: 'BNF'
+fileTypes: ['bnf']
 patterns: [
   {
-    begin: "([\\w-]+|<[\\w-]+>)\\s+(::=)\\s+"
-    beginCaptures:
-      "1":
-        name: "storage.type.symbol.bnf"
-      "2":
-        name: "keyword.operator.assignment.bnf"
-    end: ";"
-    patterns: [
-      {
-        include: "#rule-name"
-      }
-      {
-        include: "#string-double-quoted"
-      }
-      {
-        include: "#string-single-quoted"
-      }
-    ]
+    match: '^\\s*(<)([A-Za-z][A-Za-z0-9-]*)(>)\\s*(::=)\\s*(.*)\\s*$'
+    captures:
+      1:
+        name: 'punctuation.definition.tag.begin.bnf'
+      2:
+        name: 'entity.name.tag.bnf'
+      3:
+        name: 'punctuation.definition.tag.end.bnf'
+      4:
+        name: 'keyword.operator.assignment.bnf'
+      5:
+        name: 'meta.expression.bnf'
+        patterns: [
+          {
+            match: '(\\s*<)(EOL)(>\\s*)'
+            captures:
+              1:
+                name: 'punctuation.definition.tag.begin.bnf'
+              2:
+                name: 'constant.character.entity.bnf'
+              3:
+                name: 'punctuation.definition.tag.end.bnf'
+          }
+          {
+            begin: '\\s*<'
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.tag.begin.bnf'
+            end: '>\\s*'
+            endCaptures:
+              0:
+                name: 'punctuation.definition.tag.end.bnf'
+            contentName: 'entity.name.tag.bnf'
+          }
+          {
+            begin: '\\s*"'
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.string.begin.bnf'
+            end: '"\\s*'
+            endCaptures:
+              0:
+                name: 'punctuation.definition.string.end.bnf'
+            contentName: 'string.quoted.double.bnf'
+          }
+          {
+            begin: "\\s*'"
+            beginCaptures:
+              0:
+                name: 'punctuation.definition.string.begin.bnf'
+            end: "'\\s*"
+            endCaptures:
+              0:
+                name: 'punctuation.definition.string.end.bnf'
+            contentName: 'string.quoted.single.bnf'
+          }
+          {
+            match: '\\s*\\|\\s*'
+            name: 'keyword.operator.or.bnf'
+          }
+        ]
   }
 ]
-repository:
-  "rule-name":
-    begin: "(?:(\\w+)(\\@))?(<)"
-    beginCaptures:
-      "1":
-        name: "variable.rule-tag.core-parse.bnf"
-      "2":
-        name: "punctuation.tag.core-parse.bnf"
-      "3":
-        name: "punctuation.rule-name.start.bnf"
-    end: ">"
-    endCaptures:
-      "0":
-        name: "punctuation.rule-name.end.bnf"
-    patterns: [
-      {
-        match: "\\w+"
-        name: "constant.other.symbol.rule-identifier.bnf"
-      }
-    ]
-  "string-double-quoted":
-    begin: "\""
-    end: "\""
-    name: "string.quoted.double.bnf"
-  "string-single-quoted":
-    begin: "'"
-    end: "'"
-    name: "string.quoted.single.bnf"
-scope: "source.bnf"
-scopeName: "source.bnf"

@@ -1,53 +1,101 @@
-# syntax highlighting rule for Extended Backus-Naur Form (EBNF)
-# EBNF is documented in ISO/IEC 14977. This is file applies rule very loosely
-# Translate from: https://github.com/arne-schroppe/ebnf-textmate-bundle/blob/master/EBNF.tmBundle/Syntaxes/EBNF.tmLanguage
-
-fileTypes: [
-  "ebnf"
-]
-name: "EBNF"
-foldingStartMarker: "\\(\\*"
-foldingStopMarker: "\\*\\)"
+scopeName: 'source.ebnf'
+name: 'EBNF'
+fileTypes: ['ebnf']
 patterns: [
-  {include: "#comment"}
-  begin: "^\\s*(\\b(?:\\w|\\s|[\\-_0-9])+\\b)\\s*="
-  captures:
-    "1":
-      name: "entity.name.function"
-  comment: ""
-  end: ";"
-  name: "meta.ebnf.syntax-rule"
-  patterns: [
-    {include: "#comment"}
-    {include: "#non-terminal"}
-    {include: "#single-quote-string"}
-    {include: "#double-quote-string"}
-    {include: "#special-sequence"}
-    {include: "#comment"}
-  ]
+  {
+    begin: '\\s*\\(\\*'
+    beginCaptures:
+      0:
+        name: 'comment.block.begin.ebnf'
+    end: '\\*\\)\\s*'
+    endCaptures:
+      0:
+        name: 'comment.block.end.ebnf'
+    contentName: 'comment.block.ebnf'
+  }
+  {
+    begin: '\\s*"'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.ebnf'
+    end: '"\\s*'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.ebnf'
+    contentName: 'string.quoted.double.ebnf'
+  }
+  {
+    begin: "\\s*'"
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.ebnf'
+    end: "'\\s*"
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.ebnf'
+    contentName: 'string.quoted.single.ebnf'
+  }
+  {
+    begin: '\\s*\\?'
+    beginCaptures:
+      0:
+        name: 'other.description.begin.ebnf'
+    end: '\\?\\s*'
+    endCaptures:
+      0:
+        name: 'other.description.end.ebnf'
+    contentName: 'other.description.ebnf'
+  }
+  {
+    match: '([A-Za-z][A-Za-z0-9 ]*)'
+    name: 'entity.name.tag.ebnf'
+  }
+  {
+    match: '\\s*,\\s*'
+    name: 'keyword.operator.concatenation.ebnf'
+  }
+  {
+    match: '\\s*=\\s*'
+    name: 'keyword.operator.assignment.ebnf'
+  }
+  {
+    match: '\\s*([|/!])\\s*'
+    name: 'keyword.operator.or.ebnf'
+  }
+  {
+    match: '\\s*\\*\\s*'
+    name: 'keyword.operator.repeat.ebnf'
+  }
+  {
+    match: '\\s*-\\s*'
+    name: 'keyword.operator.exception.ebnf'
+  }
+  {
+    match: '\\s*[;.]\\s*'
+    name: 'puntuation.terminator.ebnf'
+  }
+  {
+    match: '\\s*\\(\\s*'
+    name: 'punctuation.bracket.round.begin.ebnf'
+  }
+  {
+    match: '\\s*\\)\\s*'
+    name: 'punctuation.bracket.round.end.ebnf'
+  }
+  {
+    match: '\\s*(\\[|\\(/)\\s*'
+    name: 'punctuation.bracket.square.begin.ebnf'
+  }
+  {
+    match: '\\s*(\\]|/\\))\\s*'
+    name: 'punctuation.bracket.square.end.ebnf'
+  }
+  {
+    match: '\\s*({|\\(:)\\s*'
+    name: 'punctuation.bracket.curly.begin.ebnf'
+  }
+  {
+    match: '\\s*(}|:\\))\\s*'
+    name: 'punctuation.bracket.curly.end.ebnf'
+  }
 ]
-
-repository:
-  "comment":
-    begin: "^\\(\\*"
-    end: "\\*\\)"
-    name: "comment.block.ebnf"
-  "double-quote-string":
-    begin: "\""
-    end: "\""
-    name: "string.quoted.double"
-  "non-terminal":
-    match: "(\\w(?:\\w|\\s|[\\-_0-9])*\\w)"
-    captures:
-      "1":
-        name: "variable.other.ebnf.non-terminal"
-  "single-quote-string":
-    begin: """
-    end: """
-    name: "string.quoted.single"
-  "special-sequence":
-    begin: "\\?"
-    end: "\\?"
-    name: "entity.other.attribute-name"
-scope: "source.ebnf"
-scopeName: "source.ebnf"

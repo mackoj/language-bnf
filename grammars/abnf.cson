@@ -1,78 +1,86 @@
-# syntax highlighting rule for Augmented Backus-Naur Form (ABNF)
-# ABNF is documented in RFC 5234. This is file applies rule very loosely
-# Original author: Jarmo Kivekas
-# Date: July 2015
-
-fileTypes: [
-  "abnf"
-]
-name: "ABNF"
+scopeName: 'source.abnf'
+name: 'ABNF'
+fileTypes: ['abnf']
 patterns: [
-  # These ruels appear here as well as in the 'expression' rule
-  # because of how multi-line syntactic elements are handled
-  {include: '#comment.line'}
-  {include: '#constant.numeric.hexadecimal'}
-  {include: '#constant.numeric.decimal'}
-  {include: '#constant.numeric.binary'}
-  {include: '#string.quoted.double'}
-  {include: '#constant.core-rule'}
   {
-    name: 'keyword.operator.assignment'
-    match: '='
+    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)(\\s*|$|(?![A-Za-z-]))'
+    captures:
+      1:
+        name: 'constant.language.abnf'
   }
   {
-    # liberally matches a rule definition line
-    # rule names start with a letter
-    match: '^\\s*([a-zA-Z][-a-zA-Z0-9]*)\\s*(=)(.*)$'
-    captures:
-      '1':
-        name: 'entity.name.function.bnf'
-      '2':
-        name: 'keyword.operator.assignment'
-      # the rules below are applied to everything on the right side
-      # of the assignment operator
-      '3':
-        name: 'expression'
-        patterns:[
-          {include: '#constant.numeric.hexadecimal'}
-          {include: '#constant.numeric.decimal'}
-          {include: '#constant.numeric.binary'}
-          {include: '#string.quoted.double'}
-          {include: '#constant.core-rule'}
-          {include: '#comment.line'}
-        ]
+    match: '([A-Za-z][A-Za-z0-9-]*)\\s*'
+    name: 'entity.name.tag.abnf'
+  }
+  {
+    match: '\\s*(=/?)\\s*'
+    name: 'keyword.operator.assignment.abnf'
+  }
+  {
+    match: '\\s*%b[01]+((-[01]+)|(\\.[01]+)*)\\s*'
+    name: 'constant.numeric.binary.abnf'
+  }
+  {
+    match: '\\s*%d[0-9]+((-[0-9]+)|(\\.[0-9]+)*)\\s*'
+    name: 'constant.numeric.decimal.abnf'
+  }
+  {
+    match: '\\s*%x[0-9A-Fa-f]+((-[0-9A-Fa-f]+)|(\\.[0-9A-Fa-f]+)*)\\s*'
+    name: 'constant.numeric.hexadecimal.abnf'
+  }
+  {
+    match: '[0-9]+'
+    name: 'constant.numeric.integer.abnf'
+  }
+  {
+    match: '\\s*\\*\\s*'
+    name: 'keyword.operator.repeat.abnf'
+  }
+  {
+    match: '\\s*/\\s*'
+    name: 'keyword.operator.or.abnf'
+  }
+  {
+    match: '\\s*\\(\\s*'
+    name: 'punctuation.bracket.round.begin.abnf'
+  }
+  {
+    match: '\\s*\\)\\s*'
+    name: 'punctuation.bracket.round.end.abnf'
+  }
+  {
+    match: '\\s*\\[\\s*'
+    name: 'punctuation.bracket.square.begin.abnf'
+  }
+  {
+    match: '\\s*\\]\\s*'
+    name: 'punctuation.bracket.square.end.abnf'
+  }
+  {
+    begin: '\\s*"'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.abnf'
+    end: '"\\s*'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.abnf'
+    contentName: 'string.quoted.double.abnf'
+  }
+  {
+    begin: '\\s*<'
+    beginCaptures:
+      0:
+        name: 'punctuation.definition.string.begin.abnf'
+    end: '>\\s*'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.string.end.abnf'
+    contentName: 'string.other.abnf'
+  }
+  {
+    begin: '\\s*;'
+    end: '\\n'
+    name: 'comment.line.semi-colon.abnf'
   }
 ]
-
-repository:
-  # semi-colon end of line comment
-  'comment.line':
-    match: '\\s*(;.*)$'
-    captures:
-      '1':
-        name: 'comment.line.semi-colon.bnf'
-  # sets of core-rules pre-defined by the language (Appendix B.)
-  'constant.core-rule':
-    match: '(ALPHA|BIT|CHAR|CR|CRLF|CTL|DIGIT|DQUOTE|HEXDIG|HTAB|LF|LWSP|OCTET|SP|VCHAR|WSP)'
-    captures:
-      '1':
-        name: 'constant.string.core-rule.bnf'
-
-  # numeric constants like %d12-52 %b01011 %x0A.42.12
-  # the range (-) and concatenation (.) operator should
-  # not be mixed. However this rule recognizes eg. %d12-42.24
-  'constant.numeric.hexadecimal':
-    name: "constant.numeric.hexadecimal.bnf"
-    match: '%x[0-9A-F]+([-\\.][0-9A-F]+)*'
-  'constant.numeric.binary':
-    name: "constant.numeric.binary.bnf"
-    match: '%b[01]+([-\\.][10]+)*'
-  'constant.numeric.decimal':
-    name: "constant.numeric.decimal.bnf"
-    match: '%d[0-9]+([-\\.][0-9]+)*'
-  'string.quoted.double':  
-    begin: '"'
-    end: '"'
-    name: 'string.quoted.double.bnf'
-scope: "source.abnf"
-scopeName: "source.abnf"

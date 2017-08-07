@@ -1,3 +1,24 @@
+## 1.2.2 - W3C EBNF added with examples
+
+  * Self-descriptive W3C
+  * DTD.w3c
+  * RELAX NG compact syntax grammar
+
+## 1.2.1 - Core ScopeList added
+
+  * Scope names have been extracted from the core modules. `examples/ScopeList.Scopelist` shows the default syntax coloring of the current theme.
+
+## 1.2.0 - Pattern optimization and self-descriptive examples
+
+  * Self-descriptive Backus-Naur Form example
+  * Simpler patterns for Backus-Naur Form
+  * Self-descriptive Wirth Syntax Notation example
+  * Simple patterns for Wirth Syntax Notation
+  * Self-descriptive ABNF example
+  * Simple patterns for ABNF
+  * Self-descriptive EBNF example
+  * Simple patterns for EBNF
+
 ## 1.1.0 - ABNF Release
 
   * ABNF Augmented Backus–Naur Form syntax support in Atom thanks to `@jarmokivekas`
